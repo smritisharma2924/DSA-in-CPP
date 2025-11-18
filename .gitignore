@@ -43,6 +43,5 @@
 # Ignore compiled files with no extension
 day*
 
-
 # But do not ignore .cpp files
 !*.cpp
