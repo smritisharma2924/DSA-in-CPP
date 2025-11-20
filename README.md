@@ -27,24 +27,6 @@ All code is kept in a single file per day for simplicity.
 
 ---
 
-## 🚀 How to Run the Code (Mac)
-
-Compile:
-'''
-g++ day01.cpp -o day01
-'''
-
-Run:
-'''
-./day01
-'''
-
-Make sure Xcode Command Line Tools are installed:
-'''
-xcode-select --install
-'''
----
-
 ## ⚙️ Tech & Tools Used
 
 - Language: C++
