@@ -22,6 +22,8 @@ All code is kept in a single file per day for simplicity.
 | 1   | day01.cpp  | Hello World, Data Types, Variables               |
 | 2   | day02.cpp  | Typecasting, If-else Statement, Basic For loop   |
 | 3   | day03.cpp  | Advance For Loop(Prime Number, Fibonacci Series) |
+| 4   | day04.cpp  | Pattern Printing                                 |
+| 5   | day05.cpp  | Pattern Printing (part 2)                        |
 
 (More days will be added as I progress 🚀)
 
