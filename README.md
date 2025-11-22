@@ -25,6 +25,8 @@ All code is kept in a single file per day for simplicity.
 | 4   | day04.cpp  | Pattern Printing                                 |
 | 5   | day05.cpp  | Pattern Printing (part 2)                        |
 | 6   | day06.cpp  | Pattern Printing (part 3)                        |
+| 7   | day07.cpp  | Pattern Printing (hard)                          |
+| 8   | day08.cpp  | Operators                                        |
 
 (More days will be added as I progress 🚀)
 
