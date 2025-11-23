@@ -165,24 +165,60 @@
 // Example 1
 // Print day name based on the entered day number by the user.
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
-    int day;
-    cout << "Enter day number (1-7): ";
-    cin >> day;
+// int main() {
+//     int day;
+//     cout << "Enter day number (1-7): ";
+//     cin >> day;
 
-    switch(day) {
-        case 1: cout << "Monday"; break;
-        case 2: cout << "Tuesday"; break;
-        case 3: cout << "Wednesday"; break;
-        case 4: cout << "Thursday"; break;
-        case 5: cout << "Friday"; break;
-        case 6: cout << "Saturday"; break;
-        case 7: cout << "Sunday"; break;
+//     switch(day) {
+//         case 1: cout << "Monday"; break;
+//         case 2: cout << "Tuesday"; break;
+//         case 3: cout << "Wednesday"; break;
+//         case 4: cout << "Thursday"; break;
+//         case 5: cout << "Friday"; break;
+//         case 6: cout << "Saturday"; break;
+//         case 7: cout << "Sunday"; break;
 
-        default:
-            cout << "Invalid day!";
-    }
-}
+//         default:
+//             cout << "Invalid day!";
+//     }
+// }
+
+
+
+// Scope of a variable
+
+// Scope of a variable means the region or part of a program where a variable is accessible and can be used.
+// A variable only works within its scope—outside that region, it cannot be accessed.
+
+// Local Scope - A variable declared inside a function or block { } is local and can only be used there.
+// Global Scope - A variable declared outside all functions is global and can be accessed anywhere in the program.
+
+// Example 1 - Local Scope 
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     int x = 10; // local to main()
+
+//     {
+//         int y = 20; // local to this block
+//         cout << y;  // valid
+//     }
+
+//     cout << x;  // valid
+//     // cout << y; // ERROR: y not accessible here
+// }
+
+// Example 2 - Global Scope 
+// #include<iostream>
+// using namespace std;
+
+// int g = 5; // global variable
+
+// int main() {
+//     cout << g;  // valid
+// }
