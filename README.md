@@ -17,19 +17,19 @@ This repository contains my daily progress and practice in Data Structures and A
 
 All code is kept in a single file per day for simplicity.
 
-| Day | File Name  | Topics Covered                                   |
-|-----|------------|--------------------------------------------------|
-| 1   | day01.cpp  | Hello World, Data Types, Variables               |
-| 2   | day02.cpp  | Typecasting, If-else Statement, Basic For loop   |
-| 3   | day03.cpp  | Advance For Loop(Prime Number, Fibonacci Series) |
-| 4   | day04.cpp  | Pattern Printing                                 |
-| 5   | day05.cpp  | Pattern Printing (part 2)                        |
-| 6   | day06.cpp  | Pattern Printing (part 3)                        |
-| 7   | day07.cpp  | Pattern Printing (hard)                          |
-| 8   | day08.cpp  | Operators                                        |
-| 9   | day09.cpp  | While&do-while loop, break&continue, switch-case |
-| 10  | day10.cpp  | Number system conversions                        |
-| 11  | day11.cpp  | Fucntions                                        |
+| Day | File Name  | Topics Covered                                       |
+|-----|------------|------------------------------------------------------|
+| 1   | day01.cpp  | Hello World, Data Types, Variables                   |
+| 2   | day02.cpp  | Typecasting, If-else Statement, Basic For loop       |
+| 3   | day03.cpp  | Advance For Loop(Prime Number, Fibonacci Series)     |
+| 4   | day04.cpp  | Pattern Printing                                     |
+| 5   | day05.cpp  | Pattern Printing (part 2)                            | 
+| 6   | day06.cpp  | Pattern Printing (part 3)                            |
+| 7   | day07.cpp  | Pattern Printing (hard)                              |
+| 8   | day08.cpp  | Operators                                            |
+| 9   | day09.cpp  | While & do-while loop, break & continue, switch-case |
+| 10  | day10.cpp  | Number system conversions                            |
+| 11  | day11.cpp  | Fucntions, Pass by value & Pass by reference         |
 
 ---
 (More days will be added as I progress 🚀)
