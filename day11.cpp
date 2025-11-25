@@ -81,14 +81,14 @@
 // Example 2 
 // Function with no return type
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-void fun() {
-    cout<<"Hello World!";
-}
+// void fun() {
+//     cout<<"Hello World!";
+// }
 
-int main() {
-    fun();
-    return 0;
-}
+// int main() {
+//     fun();
+//     return 0;
+// }
