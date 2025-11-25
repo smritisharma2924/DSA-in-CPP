@@ -95,6 +95,7 @@
 
 
 
+//Example 3
 // Pass by value
 // A copy of the variable is passed into the function.
 // Changes made inside the function do NOT affect the original variable.
@@ -114,6 +115,7 @@
 
 
 
+// Example 4
 // Pass by Reference
 // The actual variable is passed to the function, using &.
 // Changes inside the function directly modify the original variable.
@@ -130,3 +132,72 @@
 //     fun(a);
 //     cout << a;    // Output: 15 (changed)
 // }
+
+
+
+// Example 5
+// Swap two numbers
+
+// #include<iostream>
+// using namespace std;
+
+// void swap(int &a, int &b) {
+//     int temp = a;
+//     a = b;
+//     b = temp;
+// }
+
+// int main() {
+//     int a, b ;
+//     cout<<"Enter a : ";
+//     cin>>a;
+//     cout<<"Enter b : ";
+//     cin>>b;
+//     swap(a,b);
+//     cout<<"a = "<<a<<endl;
+//     cout<<"b = "<<b;
+// }
+
+
+
+// Function Overloading
+// We can write several functions with the same name, but:
+// 	-	number of parameters must differ OR
+// 	-	type of parameters must differ OR
+// 	-	order of parameters must differ
+
+
+// Example 1 : Overloading by number of parameters
+// #include <iostream>
+// using namespace std;
+// void show(int a) {
+//     cout << "Integer: " << a << endl;
+// }
+// void show(int a, int b) {
+//     cout << "Two integers: " << a << " and " << b << endl;
+// }
+// int main() {
+//     show(5);
+//     show(5, 10);
+// }
+
+
+// Example 2 : Overloading by different parameter types
+// void print(int x) {
+//     cout << "Integer: " << x << endl;
+// }
+// void print(double x) {
+//     cout << "Double: " << x << endl;
+// }
+// void print(string x) {
+//     cout << "String: " << x << endl;
+// }
+
+
+// Example 3 : Overloading by order of parameters
+// void test(int a, char b) {
+//     cout << "int, char" << endl;
+// }
+// void test(char b, int a) {
+//     cout << "char, int" << endl;
+// } 
