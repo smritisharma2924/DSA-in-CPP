@@ -92,3 +92,41 @@
 //     fun();
 //     return 0;
 // }
+
+
+
+// Pass by value
+// A copy of the variable is passed into the function.
+// Changes made inside the function do NOT affect the original variable.
+
+// #include <iostream>
+// using namespace std;
+
+// void fun(int x) {
+//     x = x + 10;  // changes only the copy
+// }
+
+// int main() {
+//     int a = 5;
+//     fun(a);
+//     cout << a;   // Output: 5 (unchanged)
+// }
+
+
+
+// Pass by Reference
+// The actual variable is passed to the function, using &.
+// Changes inside the function directly modify the original variable.
+
+// #include <iostream>
+// using namespace std;
+
+// void fun(int &x) {
+//     x = x + 10;   // modifies the original variable
+// }
+
+// int main() {
+//     int a = 5;
+//     fun(a);
+//     cout << a;    // Output: 15 (changed)
+// }
