@@ -16,21 +16,21 @@
 
 // TypeCasting
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main() {
-    int a=66;
-    char c='b';
-    cout<<"The initial value of a : "<<a;
-    a=c; //the ASCII value of c is used here 
-    cout<<"\nThe new value of a : "<<a; 
-    float b = 132.34;
-    char d = 'e';
-    cout<<"\nThe initial value of d : "<<d;
-    d = b;
-    cout<<"\nThe new value of d : "<<d; //data loss is possible during typecasting
-};
+// int main() {
+//     int a=66;
+//     char c='b';
+//     cout<<"The initial value of a : "<<a;
+//     a=c; //the ASCII value of c is used here 
+//     cout<<"\nThe new value of a : "<<a; 
+//     float b = 132.34;
+//     char d = 'e';
+//     cout<<"\nThe initial value of d : "<<d;
+//     d = b;
+//     cout<<"\nThe new value of d : "<<d; //data loss is possible during typecasting
+// };
 
 
 
