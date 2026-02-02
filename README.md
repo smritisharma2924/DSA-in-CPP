@@ -30,6 +30,7 @@ All code is kept in a single file per day for simplicity.
 | 9   | day09.cpp  | While & do-while loop, break & continue, switch-case |
 | 10  | day10.cpp  | Number system conversions                            |
 | 11  | day11.cpp  | Fucntions, Pass by value & Pass by reference         |
+| 12  | day12.cpp  | Problem Solving                                      |
 
 ---
 (More days will be added as I progress 🚀)
