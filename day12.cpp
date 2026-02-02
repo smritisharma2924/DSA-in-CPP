@@ -83,25 +83,25 @@
 
 // Example 4 (HARD) - Find the number of moves a bishop can make without changing its direction of movement.
 // Hints - when the bishop moves to a particular diagonal then maximum it can go to the corresponding first/last row or first/last column of which their minimum is the maximum number of moves it can make in that particular direction.
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int max_bishop_moves(int initial_row, int initial_column) {
-    int count = 0;
-    count += min(8-initial_row,8-initial_column); // when it moves towrards bottom right
-    count += min(8-initial_row,initial_column-1); // towards bottom left
-    count += min(initial_row-1,initial_column-1); // towards top left
-    count += min(initial_row-1,8-initial_column); // towards top right
-    return count;
-}
+// int max_bishop_moves(int initial_row, int initial_column) {
+//     int count = 0;
+//     count += min(8-initial_row,8-initial_column); // when it moves towrards bottom right
+//     count += min(8-initial_row,initial_column-1); // towards bottom left
+//     count += min(initial_row-1,initial_column-1); // towards top left
+//     count += min(initial_row-1,8-initial_column); // towards top right
+//     return count;
+// }
 
-int main() {
-    int row,col;
-    cout<<"Enter the initial position of the bishop (row, column) -"<<endl;
-    cout<<"Row : ";
-    cin>>row;
-    cout<<"Column : ";
-    cin>>col;
-    cout<<"The maximum number of moves bishop can take from that place are : "<<max_bishop_moves(row,col);
-    return 0;
-}
+// int main() {
+//     int row,col;
+//     cout<<"Enter the initial position of the bishop (row, column) -"<<endl;
+//     cout<<"Row : ";
+//     cin>>row;
+//     cout<<"Column : ";
+//     cin>>col;
+//     cout<<"The maximum number of moves bishop can take from that place are : "<<max_bishop_moves(row,col);
+//     return 0;
+// }
