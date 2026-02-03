@@ -31,6 +31,7 @@ All code is kept in a single file per day for simplicity.
 | 10  | day10.cpp  | Number system conversions                            |
 | 11  | day11.cpp  | Fucntions, Pass by value & Pass by reference         |
 | 12  | day12.cpp  | Problem Solving                                      |
+| 13  | day13.cpp  | Introduction to Arrays                               |
 
 ---
 (More days will be added as I progress 🚀)
