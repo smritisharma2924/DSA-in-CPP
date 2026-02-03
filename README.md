@@ -33,6 +33,7 @@ All code is kept in a single file per day for simplicity.
 | 12  | day12.cpp  | Problem Solving                                      |
 | 13  | day13.cpp  | Introduction to Arrays                               |
 | 14  | day14.cpp  | Time and Space Complexity                            |
+| 15  | day15.cpp  | Selection Sort                                       |
 
 ---
 (More days will be added as I progress 🚀)
