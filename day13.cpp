@@ -252,18 +252,18 @@
 // Passing arrays to a function
 
 // Example - Printing array through a function call
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-void print_array(int a[],int n) {
-    for(int i=0 ; i<n ; i++) {
-        cout<<a[i]<<" ";
-    }
-}
+// void print_array(int a[],int n) {
+//     for(int i=0 ; i<n ; i++) {
+//         cout<<a[i]<<" ";
+//     }
+// }
 
-int main() {
-    int arr[] = {2,4,2,753,634,13,6,4,642,5};
-    int len = sizeof(arr)/sizeof(arr[0]);
-    print_array(arr,len);
-    return 0;
-}
+// int main() {
+//     int arr[] = {2,4,2,753,634,13,6,4,642,5};
+//     int len = sizeof(arr)/sizeof(arr[0]);
+//     print_array(arr,len);
+//     return 0;
+// } 
