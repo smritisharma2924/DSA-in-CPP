@@ -36,6 +36,7 @@ All code is kept in a single file per day for simplicity.
 | 15  | day15.cpp  | Selection Sort                                       |
 | 16  | day16.cpp  | Bubble Sort                                          |
 | 17  | day17.cpp  | Insertion Sort                                       |
+| 18  | day18.cpp  | Binary Search                                        |
 
 ---
 (More days will be added as I progress 🚀)
