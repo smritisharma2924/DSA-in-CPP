@@ -13,28 +13,57 @@
 // Space           O(1)
 
 // Implementing Insertion Sort
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-void insertion_sort(int a[], int n) {
-    for(int i=0 ; i<n-1 ; i++) {
-        for(int j=i+1 ; j>0 ; j--) {
-            if (a[j-1]>a[j]) swap(a[j-1],a[j]);  
-        }
-    }
-}
+// void insertion_sort(int a[], int n) {
+//     for(int i=0 ; i<n-1 ; i++) {
+//         for(int j=i+1 ; j>0 ; j--) {
+//             if (a[j-1]>a[j]) swap(a[j-1],a[j]);
+//             else break;  
+//         }
+//     }
+// }
 
-int main() {
-    int arr[] = {10,8,2,3,1,4};
-    int len = sizeof(arr)/sizeof(arr[0]);
-    cout<<"Original Array : ";
-    for(int i=0 ; i<len ; i++) {
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl<<"Sorted Array : ";
-    insertion_sort(arr,len);
-    for(int i=0 ; i<len ; i++) {
-        cout<<arr[i]<<" ";
-    }
-    return 0;
-}
+// int main() {
+//     int arr[] = {10,8,2,3,1,4};
+//     int len = sizeof(arr)/sizeof(arr[0]);
+//     cout<<"Original Array : ";
+//     for(int i=0 ; i<len ; i++) {
+//         cout<<arr[i]<<" ";
+//     }
+//     cout<<endl<<"Sorted Array : ";
+//     insertion_sort(arr,len);
+//     for(int i=0 ; i<len ; i++) {
+//         cout<<arr[i]<<" ";
+//     }
+//     return 0;
+// }
+
+// Implementing Insertion Sort in descending order
+// #include<iostream>
+// using namespace std;
+
+// void insertion_sort(int a[], int n) {
+//     for(int i=0 ; i<n-1 ; i++) {
+//         for(int j=i+1 ; j>0 ; j--) {
+//             if (a[j-1]<a[j]) swap(a[j-1],a[j]);
+//             else break;  
+//         }
+//     }
+// }
+
+// int main() {
+//     int arr[] = {10,8,2,3,1,4};
+//     int len = sizeof(arr)/sizeof(arr[0]);
+//     cout<<"Original Array : ";
+//     for(int i=0 ; i<len ; i++) {
+//         cout<<arr[i]<<" ";
+//     }
+//     cout<<endl<<"Sorted Array : ";
+//     insertion_sort(arr,len);
+//     for(int i=0 ; i<len ; i++) {
+//         cout<<arr[i]<<" ";
+//     }
+//     return 0;
+// }
