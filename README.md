@@ -35,6 +35,7 @@ All code is kept in a single file per day for simplicity.
 | 14  | day14.cpp  | Time and Space Complexity                            |
 | 15  | day15.cpp  | Selection Sort                                       |
 | 16  | day16.cpp  | Bubble Sort                                          |
+| 17  | day17.cpp  | Insertion Sort                                       |
 
 ---
 (More days will be added as I progress 🚀)
