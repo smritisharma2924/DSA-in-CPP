@@ -38,6 +38,8 @@ All code is kept in a single file per day for simplicity.
 | 17  | day17.cpp  | Insertion Sort                                       |
 | 18  | day18.cpp  | Binary Search                                        |
 | 19  | day19.cpp  | Binary Search Problems                               |
+| 20  | day20.cpp  | Binary Search Problems (part 2)                      |
+
 
 ---
 (More days will be added as I progress 🚀)
