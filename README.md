@@ -39,6 +39,7 @@ All code is kept in a single file per day for simplicity.
 | 18  | day18.cpp  | Binary Search                                        |
 | 19  | day19.cpp  | Binary Search Problems                               |
 | 20  | day20.cpp  | Binary Search Problems (part 2)                      |
+| 21  | day21.cpp  | Binary Search Problems (part 3)                      |
 
 
 ---
