@@ -42,6 +42,7 @@ All code is kept in a single file per day for simplicity.
 | 21  | day21.cpp  | Binary Search Problems (part 3)                      |
 | 22  | day22.cpp  | Standard Template Library - Vectors                  |
 | 23  | day23.cpp  | Two-Pointer                                          |
+| 24  | day24.cpp  | Kadane's Algorithm                                   |
 
 ---
 (More days will be added as I progress 🚀)
