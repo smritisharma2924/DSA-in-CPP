@@ -43,6 +43,7 @@ All code is kept in a single file per day for simplicity.
 | 22  | day22.cpp  | Standard Template Library - Vectors                  |
 | 23  | day23.cpp  | Two-Pointer                                          |
 | 24  | day24.cpp  | Kadane's Algorithm                                   |
+| 25  | day25.cpp  | Problems - Trapping Rain Water, 3 Sum, 4 Sum         |
 
 ---
 (More days will be added as I progress 🚀)
