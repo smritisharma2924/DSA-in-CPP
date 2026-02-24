@@ -17,33 +17,35 @@ This repository contains my daily progress and practice in Data Structures and A
 
 All code is kept in a single file per day for simplicity.
 
-| Day | File Name  | Topics Covered                                       |
-|-----|------------|------------------------------------------------------|
-| 1   | day01.cpp  | Hello World, Data Types, Variables                   |
-| 2   | day02.cpp  | Typecasting, If-else Statement, Basic For loop       |
-| 3   | day03.cpp  | Advance For Loop(Prime Number, Fibonacci Series)     |
-| 4   | day04.cpp  | Pattern Printing                                     |
-| 5   | day05.cpp  | Pattern Printing (part 2)                            | 
-| 6   | day06.cpp  | Pattern Printing (part 3)                            |
-| 7   | day07.cpp  | Pattern Printing (hard)                              |
-| 8   | day08.cpp  | Operators                                            |
-| 9   | day09.cpp  | While & do-while loop, break & continue, switch-case |
-| 10  | day10.cpp  | Number system conversions                            |
-| 11  | day11.cpp  | Fucntions, Pass by value & Pass by reference         |
-| 12  | day12.cpp  | Problem Solving                                      |
-| 13  | day13.cpp  | Introduction to Arrays                               |
-| 14  | day14.cpp  | Time and Space Complexity                            |
-| 15  | day15.cpp  | Selection Sort                                       |
-| 16  | day16.cpp  | Bubble Sort                                          |
-| 17  | day17.cpp  | Insertion Sort                                       |
-| 18  | day18.cpp  | Binary Search                                        |
-| 19  | day19.cpp  | Binary Search Problems                               |
-| 20  | day20.cpp  | Binary Search Problems (part 2)                      |
-| 21  | day21.cpp  | Binary Search Problems (part 3)                      |
-| 22  | day22.cpp  | Standard Template Library - Vectors                  |
-| 23  | day23.cpp  | Two-Pointer                                          |
-| 24  | day24.cpp  | Kadane's Algorithm                                   |
-| 25  | day25.cpp  | Problems - Trapping Rain Water, 3 Sum, 4 Sum         |
+| Day | File Name  | Topics Covered                                          |
+|-----|------------|---------------------------------------------------------|
+| 1   | day01.cpp  | Hello World, Data Types, Variables                      |
+| 2   | day02.cpp  | Typecasting, If-else Statement, Basic For loop          |
+| 3   | day03.cpp  | Advance For Loop(Prime Number, Fibonacci Series).       |
+| 4   | day04.cpp  | Pattern Printing                                        |
+| 5   | day05.cpp  | Pattern Printing (part 2)                               | 
+| 6   | day06.cpp  | Pattern Printing (part 3)                               |
+| 7   | day07.cpp  | Pattern Printing (hard)                                 |
+| 8   | day08.cpp  | Operators                                               |
+| 9   | day09.cpp  | While & do-while loop, break & continue, switch-case    |
+| 10  | day10.cpp  | Number system conversions                               |
+| 11  | day11.cpp  | Fucntions, Pass by value & Pass by reference.           |
+| 12  | day12.cpp  | Problem Solving                                         |
+| 13  | day13.cpp  | Introduction to Arrays                                  |
+| 14  | day14.cpp  | Time and Space Complexity                               |
+| 15  | day15.cpp  | Selection Sort                                          |
+| 16  | day16.cpp  | Bubble Sort                                             |
+| 17  | day17.cpp  | Insertion Sort                                          |
+| 18  | day18.cpp  | Binary Search                                           |
+| 19  | day19.cpp  | Binary Search Problems                                  |
+| 20  | day20.cpp  | Binary Search Problems (part 2)                         |
+| 21  | day21.cpp  | Binary Search Problems (part 3)                         |
+| 22  | day22.cpp  | Standard Template Library - Vectors                     |
+| 23  | day23.cpp  | Two-Pointer                                             |
+| 24  | day24.cpp  | Kadane's Algorithm                                      |
+| 25  | day25.cpp  | Problems - Trapping Rain Water, 3 Sum, 4 Sum.           |
+| 26  | day26.cpp  | Introduction to 2D Arrays                               |
+| 27  | day27.cpp  | 2D Arrays Problems                                      |
 
 ---
 (More days will be added as I progress 🚀)
