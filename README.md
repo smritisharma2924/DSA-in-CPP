@@ -45,7 +45,8 @@ All code is kept in a single file per day for simplicity.
 | 24  | day24.cpp  | Kadane's Algorithm                                      |
 | 25  | day25.cpp  | Problems - Trapping Rain Water, 3 Sum, 4 Sum.           |
 | 26  | day26.cpp  | Introduction to 2D Arrays                               |
-| 27  | day27.cpp  | 2D Arrays Problems                                      |
+| 27  | day27.cpp  | 2D Arrays - Wave Form and Spiral Form                   |
+| 28  | day28.cpp  | Rotate Matrix Problems                                  |
 
 ---
 (More days will be added as I progress 🚀)
