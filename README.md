@@ -47,6 +47,7 @@ All code is kept in a single file per day for simplicity.
 | 26  | day26.cpp  | Introduction to 2D Arrays                               |
 | 27  | day27.cpp  | 2D Arrays - Wave Form and Spiral Form                   |
 | 28  | day28.cpp  | Rotate Matrix Problems                                  |
+| 29  | day29.cpp  | Binary Search in 2D Arrays                              |
 
 ---
 (More days will be added as I progress 🚀)
