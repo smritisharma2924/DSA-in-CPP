@@ -48,6 +48,7 @@ All code is kept in a single file per day for simplicity.
 | 27  | day27.cpp  | 2D Arrays - Wave Form and Spiral Form                   |
 | 28  | day28.cpp  | Rotate Matrix Problems                                  |
 | 29  | day29.cpp  | Binary Search in 2D Arrays                              |
+| 30  | day30.cpp  | Boyer-Moore Voting and In-Place Frequency               |
 
 ---
 (More days will be added as I progress 🚀)
