@@ -50,6 +50,7 @@ All code is kept in a single file per day for simplicity.
 | 29  | day29.cpp  | Binary Search in 2D Arrays                              |
 | 30  | day30.cpp  | Boyer-Moore Voting and In-Place Frequency               |
 | 31  | day31.cpp  | Introduction to Strings                                 |
+| 32  | day32.cpp  | Strings Problem Solving                                 |
 
 ---
 (More days will be added as I progress 🚀)
