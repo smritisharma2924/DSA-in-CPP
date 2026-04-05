@@ -86,24 +86,23 @@
 
 
 // Problem 4 - Sort a String
+// #include<iostream>
+// using namespace std;
 
-#include<iostream>
-using namespace std;
-
-int main() {
-    string s;
-    cout<<"Enter : ";
-    cin>>s;
-    vector<int> arr(26, 0);
-    int i=0;
-    while (s[i] != '\0') {
-        arr[s[i] - 'a'] += 1;
-        i++;
-    }
-    string sorted;
-    for (int i=0 ; i<s.size() ; i++) {
-        for (int j=0 ; j<arr[i] ; j++) sorted.push_back(i + 'a');
-    }
-    cout<<"Sorted : "<<sorted;
-    return 0;
-}
+// int main() {
+//     string s;
+//     cout<<"Enter : ";
+//     cin>>s;
+//     vector<int> arr(26, 0);
+//     int i=0;
+//     while (s[i] != '\0') {
+//         arr[s[i] - 'a'] += 1;
+//         i++;
+//     }
+//     string sorted;
+//     for (int i=0 ; i<26; i++) {
+//         for (int j=0 ; j<arr[i] ; j++) sorted.push_back(i + 'a');
+//     }
+//     cout<<"Sorted : "<<sorted;
+//     return 0;
+// }
