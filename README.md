@@ -51,6 +51,8 @@ All code is kept in a single file per day for simplicity.
 | 30  | day30.cpp  | Boyer-Moore Voting and In-Place Frequency               |
 | 31  | day31.cpp  | Introduction to Strings                                 |
 | 32  | day32.cpp  | Strings Problem Solving                                 |
+| 33  | day33.cpp  | Strings Problem Solving (part 2)                        |
+| 34  | day34.cpp  | Strings Problem Solving (part 3)                        |
 
 ---
 (More days will be added as I progress 🚀)
