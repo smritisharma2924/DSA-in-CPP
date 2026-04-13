@@ -119,3 +119,45 @@
 //     cout<<"Vowel Sorted String is : "<<s;
 //     return 0;
 // }
+
+
+
+// Probelm 4 - Add Strings
+// Given two non-negative integers, num1 and num2 represented 
+// as string, return the sum of num1 and num2 as a string.
+
+// #include <iostream>
+// using namespace std;
+
+// string add(string num1, string num2) { // assuming num1 > num2
+//     string ans;
+//     int idx1 = num1.length()-1, idx2 = num2.length()-1, sum=0, carry=0;
+//     while (idx2 >= 0) {
+//         sum = (num1[idx1] - '0') + (num2[idx2] - '0') + carry;
+//         carry = sum / 10;
+//         char c = '0' + sum % 10;
+//         ans += c;
+//         idx1--; idx2--;
+//     }
+//     while (idx1 >= 0) {
+//         sum = (num1[idx1] - '0') + carry;
+//         carry = sum / 10;
+//         char c = '0' + sum % 10;
+//         ans += c;
+//         idx1--;
+//     }
+//     if (carry) ans += '1';
+//     reverse(ans.begin(),ans.end());
+//     return ans;
+// }
+
+// int main() {
+//     string num1, num2;
+//     cout<<"Enter num 1 : ";
+//     cin>>num1;
+//     cout<<"Enter num 2 : ";
+//     cin>>num2;
+//     if (num1.length() > num2.length()) cout<<"Sum is : "<<add(num1,num2);
+//     else cout<<"Sum is : "<<add(num2,num1);
+//     return 0;
+// }
