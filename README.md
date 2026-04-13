@@ -53,6 +53,7 @@ All code is kept in a single file per day for simplicity.
 | 32  | day32.cpp  | Strings Problem Solving                                 |
 | 33  | day33.cpp  | Strings Problem Solving (part 2)                        |
 | 34  | day34.cpp  | Strings Problem Solving (part 3)                        |
+| 35  | day35.cpp  | Strings Problem Solving (part 4)                        |
 
 ---
 (More days will be added as I progress 🚀)
