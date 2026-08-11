@@ -258,34 +258,34 @@
 
 // CODE PART
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main() {
-    string s;
-    cout<<"Enter a string : ";
-    cin>>s;
-    vector<int> lps(s.size(),0);
-    int pre = 0, suf = 1;
-    while (suf < s.size()) {
-        // case 1 they match
-        if (s[pre] == s[suf]) {
-            lps[suf] = pre + 1;
-            pre++;
-            suf++;
-        }
-        // case 2 they dont match
-        else {
-            // if pre=0
-            if (pre == 0) {
-                lps[suf] = 0;
-                suf++;
-            }
-            // not 0
-            else {
-                pre = lps[pre-1];
-            }
-        }
-    }
-    cout<<"Length of LPS is : "<<lps[s.size()-1]; 
-}
+// int main() {
+//     string s;
+//     cout<<"Enter a string : ";
+//     cin>>s;
+//     vector<int> lps(s.size(),0);
+//     int pre = 0, suf = 1;
+//     while (suf < s.size()) {
+//         // case 1 they match
+//         if (s[pre] == s[suf]) {
+//             lps[suf] = pre + 1;
+//             pre++;
+//             suf++;
+//         }
+//         // case 2 they dont match
+//         else {
+//             // if pre=0
+//             if (pre == 0) {
+//                 lps[suf] = 0;
+//                 suf++;
+//             }
+//             // not 0
+//             else {
+//                 pre = lps[pre-1];
+//             }
+//         }
+//     }
+//     cout<<"Length of LPS is : "<<lps[s.size()-1]; 
+// }
