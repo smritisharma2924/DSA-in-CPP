@@ -55,6 +55,7 @@ All code is kept in a single file per day for simplicity.
 | 34  | day34.cpp  | Strings Problem Solving (part 3)                        |
 | 35  | day35.cpp  | Sliding Window Protocol                                 |
 | 36  | day36.cpp  | KMP Algorithm (Longest Prefix Suffix)                   |
+| 37  | day37.cpp  | KMP Algorithm for string matching                       |
 
 ---
 (More days will be added as I progress 🚀)
