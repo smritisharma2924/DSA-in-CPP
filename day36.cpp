@@ -270,8 +270,8 @@
 //     while (suf < s.size()) {
 //         // case 1 they match
 //         if (s[pre] == s[suf]) {
-//             lps[suf] = pre + 1;
-//             pre++;
+//             lps[suf] = pre + 1;    // or write here pre++;
+//             pre++;                 // and here lps[suf] = pre;
 //             suf++;
 //         }
 //         // case 2 they dont match
