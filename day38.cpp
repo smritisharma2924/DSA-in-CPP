@@ -97,3 +97,38 @@
 //     else cout<<"Not Present.";
 //     return 0;
 // }
+
+
+
+// Problem 3 - Repeated String Match
+// how many times should i repeat the first string such that second string becomes its substring
+
+// Brute force - O(n * (n+m))
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     string org, target;
+//     cout<<"Enter original string: ";
+//     cin>>org;
+//     cout<<"Enter target string: ";
+//     cin>>target;
+//     string temp;
+//     int count = 0;
+//     while (org.size() <= target.size()) {
+//         temp += org;
+//         count++;
+//         if (temp.find(target) != string::npos) {
+//             cout<<"After repeating "<<count<<" times.";
+//             return 0;
+//         }
+//     }
+//     temp += org;
+//     count++;
+//     if (temp.find(target) != string::npos) {
+//         cout<<"After repeating "<<count<<" times.";
+//         return 0;
+//     }
+//     cout<<"Not possible.";
+//     return 0;
+// }
