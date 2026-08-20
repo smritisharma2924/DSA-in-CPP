@@ -103,9 +103,43 @@
 // Problem 3 - Repeated String Match
 // how many times should i repeat the first string such that second string becomes its substring
 
-// Brute force - O(n * (n+m))
+// Optimal - O(n+m)
 // #include<iostream>
+// #include<vector>
 // using namespace std;
+
+// vector<int> createLpsArray(string s) {
+//     vector<int> lps(s.size(),0);
+//     int pre = 0, suf = 1;
+//     while (suf < s.size()) {
+//         if (s[pre] == s[suf]) {
+//             pre++;
+//             lps[suf] = pre;
+//             suf++;
+//         }
+//         else {
+//             if (pre == 0) suf++;
+//             else pre = lps[pre-1];
+//         }
+//     }
+//     return lps;
+// }
+
+// bool KmpSearch(const vector<int>& lps, const string& haystack, const string& needle) {
+//     int first=0, second=0;
+//     while (first < haystack.size() && second < needle.size()) {
+//         if (haystack[first] == needle[second]) {
+//             first++;
+//             second++;
+//         }
+//         else {
+//             if (second == 0) first++;
+//             else second = lps[second-1];
+//         }
+//     }
+//     if (second == needle.size()) return true;
+//     else return false;
+// }
 
 // int main() {
 //     string org, target;
@@ -115,18 +149,21 @@
 //     cin>>target;
 //     string temp;
 //     int count = 0;
-//     while (org.size() <= target.size()) {
+//     // repeat until target is org is greter than or equal to target 
+//     while (temp.size() < target.size()) {
 //         temp += org;
 //         count++;
-//         if (temp.find(target) != string::npos) {
-//             cout<<"After repeating "<<count<<" times.";
-//             return 0;
-//         }
 //     }
+//     // kmp pattern search
+//     vector<int> lps = createLpsArray(target);
+//     if (KmpSearch(lps, temp, target)) {
+//         cout<<count<<" times.";
+//         return 0;
+//     }
+//     // temp+a, kmp search
 //     temp += org;
-//     count++;
-//     if (temp.find(target) != string::npos) {
-//         cout<<"After repeating "<<count<<" times.";
+//     if (KmpSearch(lps, temp, target)) {
+//         cout<<count+1<<" times.";
 //         return 0;
 //     }
 //     cout<<"Not possible.";
