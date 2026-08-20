@@ -77,3 +77,23 @@
 //     cout<<"Min chars to add: "<<n - lps[s.size()-1];
 //     return 0;
 // }
+
+
+
+// Problem 2 - Circular pattern matching
+// if a string present is present in other string's any rotated version
+
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     string org, target;
+//     cout<<"Enter original string: ";
+//     cin>>org;
+//     cout<<"Enter target string: ";
+//     cin>>target;
+//     string twice = org + org;
+//     if (twice.find(target) != string::npos) cout<<"Present.";
+//     else cout<<"Not Present.";
+//     return 0;
+// }
