@@ -57,7 +57,7 @@ All code is kept in a single file per day for simplicity.
 | 36  | day36.cpp  | KMP Algorithm (Longest Prefix Suffix)                   |
 | 37  | day37.cpp  | KMP Algorithm for string matching                       |
 | 38  | day38.cpp  | String Hard Problems                                    |
-| 39  | day39.cpp  | Pointers in C++                                         |
+| 39  | day39.cpp  | Introduction to Pointers                                |
 
 ---
 (More days will be added as I progress 🚀)
