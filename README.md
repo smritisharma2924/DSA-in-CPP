@@ -58,6 +58,7 @@ All code is kept in a single file per day for simplicity.
 | 37  | day37.cpp  | KMP Algorithm for string matching                       |
 | 38  | day38.cpp  | String Hard Problems                                    |
 | 39  | day39.cpp  | Introduction to Pointers                                |
+| 40  | day40.cpp  | Pointers relationship with Arrays                       |
 
 ---
 (More days will be added as I progress 🚀)
