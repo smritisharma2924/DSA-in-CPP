@@ -18,3 +18,17 @@
 // int *ptr = arr;
 
 // ptr can be modified (ptr++), but the array name cannot (arr++ is invalid).
+
+
+
+// Print the addresses of the array elements
+#include<iostream>
+using namespace std;
+
+int main() {
+    int arr[5] = {1,2,3,4,5};
+    for (int i=0 ; i < 5 ; i++) {
+        cout<<"Address of "<<arr[i]<<": "<<arr+i<<endl;
+    }
+    return 0;
+}
