@@ -187,3 +187,23 @@
 //     cout<<"b: "<<b;
 //     return 0;
 // }
+
+
+
+
+
+// REFERENCE VARIABLE
+
+// int num = 10;
+// int &ref = num;
+
+// ref is an alias/another name for num.
+// ref does NOT create a separate copy of num.
+// Changes made using ref also change num.
+
+// ref++;
+// num becomes 11
+
+// Both have the same address:
+// cout << &num << endl;
+// cout << &ref << endl;
