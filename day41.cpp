@@ -207,3 +207,6 @@
 // Both have the same address:
 // cout << &num << endl;
 // cout << &ref << endl;
+
+// Pointer   → stores the address of a variable
+// Reference → acts as another name for the variable
