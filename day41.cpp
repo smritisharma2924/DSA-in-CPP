@@ -75,3 +75,69 @@
 //     return 0;
 // }
 // here the same implementation is working too.
+
+
+
+
+
+// FUNCTIONS
+
+// PASS BY VALUE
+// A copy of num is passed to n.
+// Changes are made only to the copy.
+// Original variable remains unchanged.
+// num = 5
+//       ↓ copy
+// n   = 5 → 6
+// num = 5 (unchanged)
+
+// #include <iostream>
+// using namespace std;
+
+// void update(int n) {
+//     n = n + 1;
+// }
+// int main() {
+//     int num = 5;
+//     update(num);
+//     cout << num;   // 5
+// }
+
+
+// PASS BY REFERENCE USING POINTER
+
+// &num  -> address of num
+// ptr   -> stores address of num
+// *ptr  -> accesses the original num
+// Therefore, changing *ptr changes num itself.
+// num = 5
+//  ↑
+// ptr points to num
+//  ↓
+// *ptr = *ptr + 1
+// num becomes 6
+
+// #include <iostream>
+// using namespace std;
+
+// void update(int *ptr) {
+//     *ptr = *ptr + 1;
+// }
+// int main() {
+//     int num = 5;
+//     update(&num);
+//     cout << num;   // 6
+// }
+
+
+// Pass by Value:
+// update(num)
+// Copy is passed → original value does NOT change.
+
+// Pass by Reference using Pointer:
+// update(&num)
+// Address is passed → original value CAN be changed.
+
+// &num = address of num
+// ptr  = stores the address
+// *ptr = value present at that address
