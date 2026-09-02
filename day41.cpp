@@ -35,6 +35,8 @@
 
 
 
+
+
 // PRINTING ADDRESS OF A CHAR ARRAY
 
 // Normally, cout treats char* as a C-style string.
@@ -57,3 +59,19 @@
 
 // Better C++ syntax:
 // static_cast<void*>(arr)
+
+
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     char name = 'a';
+//     char *ptr = &name;
+//     cout<<ptr<<endl;
+//     cout<<(void*)ptr;
+//     return 0;
+// }
+// here the same implementation is working too.
