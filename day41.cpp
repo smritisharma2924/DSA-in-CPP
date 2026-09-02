@@ -210,3 +210,8 @@
 
 // Pointer   → stores the address of a variable
 // Reference → acts as another name for the variable
+
+
+// Tips -
+// Solve vector and string problems using reference variable
+// Solve char, array problems using pointers.
