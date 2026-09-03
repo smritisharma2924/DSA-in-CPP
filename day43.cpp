@@ -70,3 +70,35 @@ Heap  -> manual memory management using new/delete
 
 Not deleting heap memory when it is no longer needed can cause a MEMORY LEAK.
 */
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     // int value allocation
+//     int *ptr1 = new int;
+//     *ptr1 = 5;
+//     cout<<"Integer: "<<*ptr1<<endl;
+
+//     // float value allocation
+//     float *ptr2 = new float;
+//     *ptr2 = 3.6;
+//     cout<<"Float: "<<*ptr2<<endl;
+
+//     // array value allocation
+//     int n;
+//     cout<<"Enter size of array: ";
+//     cin>>n;
+//     int *p = new int[n];
+//     for (int i=0 ; i<n ; i++) p[i] = i+1;
+//     for (int i=0 ; i<n ; i++) cout<<p[i]<<" ";
+
+//     // free memory
+//     delete ptr1;
+//     delete ptr2;
+//     delete[] p;
+
+//     return 0;
+// }
