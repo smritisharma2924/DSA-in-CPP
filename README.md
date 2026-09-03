@@ -61,6 +61,7 @@ All code is kept in a single file per day for simplicity.
 | 40  | day40.cpp  | Pointers relationship with Arrays                       |
 | 41  | day41.cpp  | Pointers with char arrays and Functions                 |
 | 42  | day42.cpp  | Double Pointer and Multiple Pointers                    |
+| 43  | day43.cpp  | Memory Management                                       |
 
 ---
 (More days will be added as I progress 🚀)
