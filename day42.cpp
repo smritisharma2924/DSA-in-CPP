@@ -235,3 +235,45 @@ x + y + z
 
 Output: 19
 */
+
+
+
+// Problem: Find the output of the following char pointer code.
+// #include <iostream>
+// using namespace std;
+
+// void Five(char *str1, char *str2) {
+//     while ((*str1 = *str2)) {
+//         str1++;
+//         str2++;
+//     }
+// }
+// int main() {
+//     char first[] = "Mohit";
+//     char second[] = "Rohan";
+//     Five(first, second);
+//     cout << first;
+//     return 0;
+// }
+
+/*
+Explanation:
+
+*str1 = *str2 copies each character of second into first.
+
+R -> first[0]
+o -> first[1]
+h -> first[2]
+a -> first[3]
+n -> first[4]
+
+When '\0' is copied, the while condition becomes false.
+
+So "Mohit" gets replaced by "Rohan".
+
+Output:
+Rohan
+
+Important:
+Here = is assignment, not comparison (==).
+*/
