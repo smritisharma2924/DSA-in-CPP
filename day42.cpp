@@ -146,3 +146,92 @@ y = 0
 Output:
 10
 */
+
+
+
+// Problem: Find the output of the following reference & pointer code.
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int a = 5, b = 10;
+//     int &name = a;
+//     int *ptr = &a;
+//     (*ptr)++;          // a = 6
+//     ptr = &b;
+//     *ptr = *ptr + 5;   // b = 15
+//     name += 5;         // name refers to a, so a = 11
+//     cout << a << " " << b;
+//     return 0;
+// }
+
+/*
+Explanation:
+
+Initially: a = 5, b = 10
+
+name is a reference (alias) of a.
+ptr initially points to a.
+
+(*ptr)++  -> a becomes 6
+
+ptr = &b  -> ptr now points to b
+*ptr += 5 -> b becomes 15
+
+name += 5 -> name still refers to a, so a becomes 11
+
+Note:
+A pointer can change what it points to,
+but a reference remains attached to the same variable.
+
+Output:
+11 15
+*/
+
+
+
+// Problem: Find the output using pointers and double pointers.
+// #include <iostream>
+// using namespace std;
+// int four(int x, int *py, int **ppz) {
+//     int y, z;
+//     **ppz += 1;
+//     z = **ppz;
+//     *py += 2;
+//     y = *py;
+//     x += 3;
+//     return x + y + z;
+// }
+
+// int main() {
+//     int c, *b, **a;
+//     c = 4;
+//     b = &c;
+//     a = &b;
+//     cout << four(c, b, a);
+//     return 0;
+// }
+
+/*
+Explanation:
+
+Initially:
+c = 4
+b -> c
+a -> b -> c
+
+four(c, b, a):
+
+**ppz += 1  -> c = 5, z = 5
+*py += 2    -> c = 7, y = 7
+x += 3      -> x = 7
+
+Note: x is passed by value, so it is a separate copy.
+
+Return:
+x + y + z
+= 7 + 7 + 5
+= 19
+
+Output: 19
+*/
