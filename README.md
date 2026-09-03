@@ -60,6 +60,7 @@ All code is kept in a single file per day for simplicity.
 | 39  | day39.cpp  | Introduction to Pointers                                |
 | 40  | day40.cpp  | Pointers relationship with Arrays                       |
 | 41  | day41.cpp  | Pointers with char arrays and Functions                 |
+| 42  | day42.cpp  | Double Pointer                                          |
 
 ---
 (More days will be added as I progress 🚀)
