@@ -110,3 +110,39 @@ i remains unchanged.
 Output:
 0 2
 */
+
+
+
+// Problem: Find the output of the following pointer code.
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int *ptr;
+//     int x = 0;
+//     ptr = &x;
+//     int y = *ptr;
+//     *ptr = 1;
+//     cout<<x<<y;
+//     return 0;
+// }
+
+/*
+Explanation:
+
+Initially: x = 0
+ptr = &x       -> ptr points to x
+
+y = *ptr       -> y gets the current value of x = 0
+
+*ptr = 1       -> changes x to 1
+y remains 0 (it stored a copy)
+
+So:
+x = 1
+y = 0
+
+Output:
+10
+*/
