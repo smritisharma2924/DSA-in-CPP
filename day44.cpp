@@ -78,6 +78,7 @@ delete[] ptr;
 
 IMPORTANT:
 Always delete rows FIRST and ptr LAST to avoid memory leaks.
+ptr[i][j] == *(*(ptr + i) + j)
 */
 
 
@@ -120,5 +121,155 @@ Always delete rows FIRST and ptr LAST to avoid memory leaks.
 //     for (int i=0 ; i < row ; i++) delete[] ptr[i];
 //     delete[] ptr;
 
+//     return 0;
+// }
+
+
+
+
+
+/*
+DYNAMIC MEMORY ALLOCATION OF 3D ARRAY
+
+For a dynamic 3D array, we use a TRIPLE POINTER:
+int ***ptr;
+
+Think of a 3D array as:
+-> array of 2D arrays
+-> each 2D array contains rows
+-> each row contains integers
+
+
+Example: Create L x B x H array dynamically
+int L = 3, B = 2, H = 3;
+
+// STEP 1: Create array of int** pointers
+
+int ***ptr = new int**[L];
+
+// STEP 2: Create a 2D structure for each layer
+
+for(int i = 0; i < L; i++) {
+
+    ptr[i] = new int*[B];
+
+    // STEP 3: Create each row
+    for(int j = 0; j < B; j++) {
+        ptr[i][j] = new int[H];
+    }
+}
+
+
+MEMORY REPRESENTATION:
+
+ptr
+ |
+ |---- ptr[0] ----> 2D Array
+ |                    |
+ |                    |--> [ ][ ][ ]
+ |                    |--> [ ][ ][ ]
+ |
+ |---- ptr[1] ----> 2D Array
+ |                    |
+ |                    |--> [ ][ ][ ]
+ |                    |--> [ ][ ][ ]
+ |
+ |---- ptr[2] ----> 2D Array
+                      |
+                      |--> [ ][ ][ ]
+                      |--> [ ][ ][ ]
+
+
+ACCESSING ELEMENTS:
+
+ptr[i][j][k]
+is equivalent to:
+*(*(*(ptr + i) + j) + k)
+
+
+HOW IT WORKS:
+
+ptr + i
+    -> location of ith layer pointer
+
+*(ptr + i)
+    -> ptr[i] -> points to ith 2D array
+
+*(ptr + i) + j
+    -> points to jth row
+
+*(*(ptr + i) + j)
+    -> ptr[i][j] -> points to first element of that row
+
+*(*(*(ptr + i) + j) + k)
+    -> value at ptr[i][j][k]
+
+
+// DELETE 3D ARRAY
+
+for(int i = 0; i < L; i++) {
+    // Delete each row
+    for(int j = 0; j < B; j++) {
+        delete[] ptr[i][j];
+    }
+    // Delete row-pointer array of each layer
+    delete[] ptr[i];
+}
+// Finally delete the layer-pointer array
+delete[] ptr;
+
+
+IMPORTANT:
+
+2D DMA -> int **ptr
+3D DMA -> int ***ptr
+
+ptr[i][j][k] == *(*(*(ptr+i)+j)+k)
+*/
+
+
+
+// 3D array with DMA
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     int L,B,H;
+//     cin>>L>>B>>H;
+//     int ***ptr = new int**[L];
+
+//     // create 2d array and store its address in ptr
+//     for (int i=0 ; i < L ; i++) {
+//         ptr[i] = new int *[B];
+//         for (int j=0 ; j < B ; j++) {
+//             ptr[i][j] = new int[H];
+//         }
+//     }
+
+//     // fill values
+//     for (int i=0 ; i<L ; i++)
+//     for (int j=0 ; j<B ; j++) 
+//     for (int k=0 ; k<H ; k++)
+//     ptr[i][j][k] = i+j+k;
+
+//     // print values
+//     for (int i=0 ; i<L ; i++) {
+//         for (int j=0 ; j<B ; j++) {
+//             for (int k=0 ; k<H ; k++) {
+//                 cout<<ptr[i][j][k]<<" ";
+//             }
+//             cout<<endl;
+//         }
+//         cout<<endl;
+//     }
+
+//     // release memory
+//     for (int i=0 ; i<L ; i++) {
+//         for (int j=0 ; j<B ; j++) {
+//             delete[] ptr[i][j];
+//         }
+//         delete[] ptr[i];
+//     }
+//     delete[] ptr;
 //     return 0;
 // }
