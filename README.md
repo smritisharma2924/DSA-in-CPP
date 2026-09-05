@@ -63,6 +63,7 @@ All code is kept in a single file per day for simplicity.
 | 42  | day42.cpp  | Double Pointer and Multiple Pointers                    |
 | 43  | day43.cpp  | Memory Management & Static vs Dyanamic Memory Allocation|
 | 44  | day44.cpp  | DMA of 2D Arrays                                        |
+| 45  | day45.cpp  | Recursion                                               |
 
 ---
 (More days will be added as I progress 🚀)
