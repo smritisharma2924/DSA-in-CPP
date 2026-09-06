@@ -64,6 +64,7 @@ All code is kept in a single file per day for simplicity.
 | 43  | day43.cpp  | Memory Management & Static vs Dyanamic Memory Allocation|
 | 44  | day44.cpp  | DMA of 2D Arrays                                        |
 | 45  | day45.cpp  | Recursion + Basic Recursion Problems                    |
+| 46  | day46.cpp  | Recursion problems                                      |
 
 ---
 (More days will be added as I progress 🚀)
