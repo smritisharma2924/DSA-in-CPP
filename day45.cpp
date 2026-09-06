@@ -42,3 +42,30 @@
 //     print(num);
 //     return 0;
 // }
+
+
+
+// Problem 2 - Print all the even numbers from 1 to N
+// #include<iostream>
+// using namespace std;
+
+// void printEven(int n) {
+//     if (n < 2) {
+//         return;
+//     }
+//     if (n % 2 == 0) {
+//         printEven(n-2);
+//         cout<<n<<" ";
+//     }
+//     else {
+//         printEven(n-1);
+//     }
+// }
+
+// int main() {
+//     int num;
+//     cout<<"Enter num: ";
+//     cin>>num;
+//     printEven(num);
+//     return 0;
+// }
