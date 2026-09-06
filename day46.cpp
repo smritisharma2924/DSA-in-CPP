@@ -33,3 +33,22 @@
 //     cout<<"Sum is: "<<sum(num);
 //     return 0;
 // }
+
+
+
+// Problem 3 - Power of 2
+// #include<iostream>
+// using namespace std;
+
+// int pow2(int n) {
+//     if (n == 1) return 2;
+//     else return 2 * pow2(n-1);
+// }
+
+// int main() {
+//     int num;
+//     cout<<"Enter num: ";
+//     cin>>num;
+//     cout<<"Power of 2: "<<pow2(num);
+//     return 0;
+// }
