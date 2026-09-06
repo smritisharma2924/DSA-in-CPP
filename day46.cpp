@@ -52,3 +52,22 @@
 //     cout<<"Power of 2: "<<pow2(num);
 //     return 0;
 // }
+
+
+
+// Problem 4 - Sum of square of N natural numbers
+// #include<iostream>
+// using namespace std;
+
+// int sOs(int n) {
+//     if (n == 0) return 0;
+//     else return (n*n) + sOs(n-1);
+// }
+
+// int main() {
+//     int num;
+//     cout<<"Enter num: ";
+//     cin>>num;
+//     cout<<"Sum of sq: "<<sOs(num);
+//     return 0;
+// }
