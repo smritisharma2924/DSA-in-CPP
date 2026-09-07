@@ -152,12 +152,18 @@
 //     return a;
 // }
 
+// int gcd_recursion(int a, int b) {
+//     if (b == 0) return a;
+//     return gcd_recursion(b, a%b);
+// }
+
 // int main() {
 //     int num1, num2;
 //     cout<<"Enter num1: ";
 //     cin>>num1;
 //     cout<<"Enter num2: ";
 //     cin>>num2;
-//     cout<<"GCD is: "<<gcd(num1, num2);
+//     cout<<"GCD is: "<<gcd(num1, num2)<<endl;
+//     cout<<"GCD is: "<<gcd_recursion(num1,num2);
 //     return 0;
 // }
