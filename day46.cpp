@@ -96,12 +96,35 @@
 
 
 // Problem 6 - Climbing stairs
+// using recursion
 // #include<iostream>
 // using namespace std;
 
 // int ways(int n) {
 //     if (n == 1 || n == 2) return n;
 //     return ways(n-1) + ways(n-2);
+// }
+
+// int main() {
+//     int num;
+//     cout<<"Enter num: ";
+//     cin>>num;
+//     cout<<"Ways are: "<<ways(num);
+// }
+
+
+// using iterative
+// #include<iostream>
+// using namespace std;
+
+// int ways(int n) {
+//     int first = 1, second = 2, curr;
+//     for (int i=3 ; i <= n ; i++) {
+//         curr = first+second;
+//         first = second;
+//         second = curr;
+//     }
+//     return curr;
 // }
 
 // int main() {
