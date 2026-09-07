@@ -133,3 +133,31 @@
 //     cin>>num;
 //     cout<<"Ways are: "<<ways(num);
 // }
+
+
+
+// Problem 7 - GCD of two numbers
+// #include<iostream>
+// using namespace std;
+
+// int gcd(int a, int b) {
+//     int temp = a;
+//     a = b;
+//     b = temp;
+//     while (b != 0) {
+//         temp = a % b;
+//         a = b;
+//         b = temp;
+//     }
+//     return a;
+// }
+
+// int main() {
+//     int num1, num2;
+//     cout<<"Enter num1: ";
+//     cin>>num1;
+//     cout<<"Enter num2: ";
+//     cin>>num2;
+//     cout<<"GCD is: "<<gcd(num1, num2);
+//     return 0;
+// }
