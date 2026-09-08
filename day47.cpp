@@ -45,7 +45,7 @@
 // }
 
 // int main() {
-//     int arr[] = {1,2,3,4,5};
+//     int arr[] = {7,2,4,1,6};
 //     int sum = 0;
 //     cout<<"Sum is: "<<sumArray(arr, 5, sum, 0);
 //     return 0;
