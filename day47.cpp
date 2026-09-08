@@ -31,3 +31,22 @@
 //     print(arr, 0, 6);
 //     return 0;
 // }
+
+
+
+// Problem 3 - Sum of all elements
+// #include<iostream>
+// using namespace std;
+
+// int sumArray(int arr[], int len, int sum, int index) {
+//     if (index == len) return sum;
+//     sum += arr[index];
+//     return sumArray(arr, len, sum, index+1);
+// }
+
+// int main() {
+//     int arr[] = {1,2,3,4,5};
+//     int sum = 0;
+//     cout<<"Sum is: "<<sumArray(arr, 5, sum, 0);
+//     return 0;
+// }
