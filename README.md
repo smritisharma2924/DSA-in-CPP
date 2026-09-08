@@ -65,6 +65,7 @@ All code is kept in a single file per day for simplicity.
 | 44  | day44.cpp  | DMA of 2D Arrays                                        |
 | 45  | day45.cpp  | Recursion + Basic Recursion Problems                    |
 | 46  | day46.cpp  | Recursion problems                                      |
+| 47  | day47.cpp  | Recursion on Arrays                                     |
 
 ---
 (More days will be added as I progress 🚀)
