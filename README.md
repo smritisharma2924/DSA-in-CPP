@@ -68,6 +68,7 @@ All code is kept in a single file per day for simplicity.
 | 47  | day47.cpp  | Recursion on Arrays                                     |
 | 48  | day48.cpp  | Recursion in Strings                                    |
 | 49  | day49.cpp  | Recursion in Binary Search                              |
+| 50  | day50.cpp  | Time and Space Complexity in Recursion                  |
 
 ---
 (More days will be added as I progress 🚀)
