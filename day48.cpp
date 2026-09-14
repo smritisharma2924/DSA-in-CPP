@@ -85,3 +85,26 @@
 //     lowerToUpper(s,0);
 //     cout<<"New string: "<<s;
 // }
+
+
+
+// Problem 5 - Upppercase to lowercase
+// #include<iostream>
+// using namespace std;
+
+// void upperToLower(string &s, int index) {
+//     if (index == s.size()) return;
+//     else {
+//         s[index] = s[index] + 'a' - 'A';
+//         upperToLower(s, index+1);
+//     }
+//     return;
+// }
+
+// int main() {
+//     string s;
+//     cout<<"Enter string: ";
+//     cin>>s;
+//     upperToLower(s,0);
+//     cout<<"New string: "<<s;
+// }
