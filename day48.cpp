@@ -62,3 +62,26 @@
 //     cout<<"Reversed: "<<s;
 //     return 0;
 // }
+
+
+
+// Problem 4 - Lowercase to uppercase
+// #include<iostream>
+// using namespace std;
+
+// void lowerToUpper(string &s, int index) {
+//     if (index == s.size()) return;
+//     else {
+//         s[index] = s[index] + 'A' - 'a';
+//         lowerToUpper(s, index+1);
+//     }
+//     return;
+// }
+
+// int main() {
+//     string s;
+//     cout<<"Enter string: ";
+//     cin>>s;
+//     lowerToUpper(s,0);
+//     cout<<"New string: "<<s;
+// }
