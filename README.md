@@ -66,6 +66,7 @@ All code is kept in a single file per day for simplicity.
 | 45  | day45.cpp  | Recursion + Basic Recursion Problems                    |
 | 46  | day46.cpp  | Recursion problems                                      |
 | 47  | day47.cpp  | Recursion on Arrays                                     |
+| 48  | day48.cpp  | Recursion in Strings                                    |
 
 ---
 (More days will be added as I progress 🚀)
