@@ -15,3 +15,24 @@
 //     cout<<pal(s, 0, s.size()-1);
 //     return 0;
 // }
+
+
+
+// Problem 2 - Count Vowels
+// #include<iostream>
+// using namespace std;
+
+// int countVowel(string s, int index) {
+//     string vow = "aeiou";
+//     if (index < 0) return 0;
+//     if (vow.find(s[index]) != string::npos) return 1 + countVowel(s, index-1);
+//     else return countVowel(s, index-1);
+// }
+
+// int main() {
+//     string s;
+//     cout<<"Enter string: ";
+//     cin>>s;
+//     cout<<"Vowels: "<<countVowel(s, s.size()-1);
+//     return 0;
+// }
