@@ -70,6 +70,7 @@ All code is kept in a single file per day for simplicity.
 | 49  | day49.cpp  | Recursion in Binary Search                              |
 | 50  | day50.cpp  | Time and Space Complexity in Recursion                  |
 | 51  | day51.cpp  | Merge Sort                                              |
+| 52  | day52.cpp  | Quick Sort                                              |
 
 ---
 (More days will be added as I progress 🚀)
