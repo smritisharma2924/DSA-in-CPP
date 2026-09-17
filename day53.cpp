@@ -64,4 +64,33 @@
 // Problem 3 - Generate parentheses
 // rules:- no of left parentheses = n
 //         no of right parentheses = n
-//         at any point, opening p's >= closing p's
+//         at any point, opening/left p's >= closing/right p's
+
+// #include <iostream>
+// using namespace std;
+
+// void parentheses(int n, int left, int right, vector<string>& ans, string temp) {
+//     if (left == n && right == n) {
+//         ans.push_back(temp);
+//         return;
+//     }
+//     // left parentheses
+//     if (left < n) parentheses(n, left+1, right, ans, temp+"(");
+//     // right parentheses
+//     if (right < left) parentheses(n, left, right+1, ans, temp+")");
+    
+// }
+
+// int main() {
+//     int n;
+//     cout<<"Enter a value: ";
+//     cin>>n;
+//     string temp = "";
+//     vector<string> ans;
+//     int left=0, right=0;
+//     parentheses(n, left, right, ans, temp);
+//     for (int i = 0; i < ans.size(); i++) {
+//         cout << "\"" << ans[i] << "\" ";
+//     }
+//     return 0;
+// }
