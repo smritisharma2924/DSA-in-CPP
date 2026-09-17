@@ -25,3 +25,26 @@
 //     cout<<endl<<"Total Sum: "<<total_sum;
 //     return 0;
 // }
+
+
+
+// Problem 2 - Target Sum
+// #include<iostream>
+// using namespace std;
+
+// bool findSum(int arr[], int idx, int n, int target, int sum) {
+//     if (sum == target) return true;
+//     if (idx == n) return false;
+//     // not include
+//     if (findSum(arr, idx+1, n, target, sum)) return true;
+//     // include
+//     if (findSum(arr, idx+1, n, target, sum+arr[idx])) return true;
+//     return false;
+// }
+
+// int main() {
+//     int arr[] = {3,6,4,5};
+//     if (findSum(arr, 0, 4, 10, 0)) cout<<"Possible.";
+//     else cout<<"Not possible.";
+//     return 0;
+// }
