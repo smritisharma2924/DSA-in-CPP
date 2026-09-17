@@ -35,11 +35,8 @@
 // bool findSum(int arr[], int idx, int n, int target, int sum) {
 //     if (sum == target) return true;
 //     if (idx == n) return false;
-//     // not include
-//     if (findSum(arr, idx+1, n, target, sum)) return true;
-//     // include
-//     if (findSum(arr, idx+1, n, target, sum+arr[idx])) return true;
-//     return false;
+//     // not include or include
+//     return (findSum(arr, idx+1, n, target, sum) || findSum(arr, idx+1, n, target, sum+arr[idx]));
 // }
 
 // int main() {
