@@ -1,5 +1,4 @@
-// Print all subsequences of a given array
-
+// Problem 1 - Print all subsequences of a given array
 // #include<iostream>
 // using namespace std;
 
@@ -33,8 +32,7 @@
 
 
 
-// Print subsequences for a string
-
+// Problem 2 - Print subsequences for a string
 // #include<iostream>
 // using namespace std;
 
@@ -60,3 +58,10 @@
 //     }
 //     return 0;
 // }
+
+
+
+// Problem 3 - Generate parentheses
+// rules:- no of left parentheses = n
+//         no of right parentheses = n
+//         at any point, opening p's >= closing p's
