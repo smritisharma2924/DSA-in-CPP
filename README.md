@@ -73,6 +73,7 @@ All code is kept in a single file per day for simplicity.
 | 52  | day52.cpp  | Quick Sort                                              |
 | 53  | day53.cpp  | Recursion on Subsequence                                |
 | 54  | day54.cpp  | Recursion on subset sum and target sum                  |
+| 55  | day55.cpp  | Recursion: perfect sum and target sum with repetition   |
 
 ---
 (More days will be added as I progress 🚀)
