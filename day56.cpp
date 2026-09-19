@@ -35,3 +35,7 @@
 //     cout<<"total permutations are: "<<count;
 //     return 0;
 // }
+
+
+
+// but what if we are asked to not use the temp and visited arrays
