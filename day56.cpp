@@ -58,8 +58,6 @@
 // int main() {
 //     vector<int> nums = {1,2,3};
 //     vector<vector<int>> ans;
-//     vector<int> temp;
-//     vector<bool> visited(4, 0);
 //     permut(nums, ans, 0);
 //     int count = 0;
 //     for (int i=0 ; i < ans.size() ; i++) {
