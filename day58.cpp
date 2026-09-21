@@ -38,3 +38,6 @@
 //     cout<<"No of steps: "<<ans;
 //     return 0;
 // }
+
+// Time complexity: O(2^n)
+// Space complexity: O(n)
