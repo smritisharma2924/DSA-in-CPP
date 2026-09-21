@@ -76,6 +76,7 @@ All code is kept in a single file per day for simplicity.
 | 55  | day55.cpp  | Recursion: perfect sum and target sum with repetition   |
 | 56  | day56.cpp  | Permutation of arrays and strings                       |
 | 57  | day57.cpp  | Permutation with repetition, ways to sum N              |
+| 58  | day58.cpp  | Tower of Hanoi problem                                  |
 
 ---
 (More days will be added as I progress 🚀)
