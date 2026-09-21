@@ -78,3 +78,21 @@
 
 
 // Problem 2 - ways to sum N but we can also repeat any element in the array any times
+// #include<iostream>
+// using namespace std;
+
+// int way(vector<int> nums, int sum, int idx) {
+//     if(sum == 0) return 1;
+//     if (sum < 0) return 0;
+//     int ans=0;
+//     for (int i=idx ; i < nums.size() ; i++) {
+//         ans += way(nums, sum-nums[i], i);
+//     }
+//     return ans;
+// }
+
+// int main() {
+//     vector<int> nums = {1,2,3};
+//     cout<<way(nums, 4, 0);
+//     return 0;
+// }
