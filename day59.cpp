@@ -20,6 +20,7 @@
 //     //
 //     // Taking % person_left avoids unnecessary full rounds when k is greater than the number of people still alive.
 //     int kill = (k - 1) % person_left;
+//     kill tells us how many alive people we need to skip before eliminating the kth person. We will move in a circular manner, skipping over eliminated people (person[i] = 1) until we reach the kth alive person.
 
 //     while (kill--) {
 
