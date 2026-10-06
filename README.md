@@ -77,6 +77,7 @@ All code is kept in a single file per day for simplicity.
 | 56  | day56.cpp  | Permutation of arrays and strings                       |
 | 57  | day57.cpp  | Permutation with repetition, ways to sum N              |
 | 58  | day58.cpp  | Tower of Hanoi problem                                  |
+| 59  | day59.cpp  | Josephus problem                                        |
 
 ---
 (More days will be added as I progress 🚀)
