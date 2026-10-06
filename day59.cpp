@@ -1,6 +1,9 @@
 // Josephus problem
 // predict the winnner of the game
 
+// Brute force
+// time complexity O(n2)
+
 // #include<iostream>
 // using namespace std;
 
@@ -57,3 +60,8 @@
 //     cout<<"Winner is the person at index: "<<winner(person, n, 0, n, k);
 //     return 0;
 // }
+
+
+
+// Optimized solution
+// time complexity O(n)
