@@ -79,6 +79,7 @@ All code is kept in a single file per day for simplicity.
 | 58  | day58.cpp  | Tower of Hanoi problem                                  |
 | 59  | day59.cpp  | Josephus problem                                        |
 | 60  | day60.cpp  | Recursion in 2D arrays: Rat in a maze problem           |
+| 61  | day61.cpp  | Recursion: n bit binary number                          |
 
 ---
 (More days will be added as I progress 🚀)
