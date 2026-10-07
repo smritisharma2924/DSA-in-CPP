@@ -20,3 +20,13 @@ void find(int n, vector<string> &ans, string &temp, int zero, int one) {
     find(n, ans, temp, zero, one+1);
     temp.pop_back();
 }
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    vector<string> ans;
+    string temp = "";
+    string *ptr = &temp;
+    find(n, ans, &ptr, 0, 0);
+}
