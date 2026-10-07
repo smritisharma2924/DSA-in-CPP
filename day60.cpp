@@ -90,4 +90,5 @@
 //     return 0;
 // }
 
-// time complexity 3^(n^2)
+// time complexity O(3^(n^2))
+// space complexity O(n^2)
