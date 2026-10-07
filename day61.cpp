@@ -23,10 +23,17 @@ void find(int n, vector<string> &ans, string &temp, int zero, int one) {
 
 int main() {
     int n;
-    cout<<"Enter n: ";
-    cin>>n;
+    cout << "Enter n: ";
+    cin >> n;
+
     vector<string> ans;
     string temp = "";
-    string *ptr = &temp;
-    find(n, ans, &ptr, 0, 0);
+
+    find(n, ans, temp, 0, 0);
+
+    for (int i = 0; i < ans.size(); i++) {
+        cout << ans[i] << endl;
+    }
+
+    return 0;
 }
