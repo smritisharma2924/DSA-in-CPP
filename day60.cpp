@@ -89,3 +89,5 @@
 
 //     return 0;
 // }
+
+// time complexity 3^(n^2)
