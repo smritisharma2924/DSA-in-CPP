@@ -80,6 +80,7 @@ All code is kept in a single file per day for simplicity.
 | 59  | day59.cpp  | Josephus problem                                        |
 | 60  | day60.cpp  | Recursion in 2D arrays: Rat in a maze problem           |
 | 61  | day61.cpp  | Recursion: n bit binary number                          |
+| 62  | day62.cpp  | Introduction to OOPS                                    |
 
 ---
 (More days will be added as I progress 🚀)
