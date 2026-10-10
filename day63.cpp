@@ -30,16 +30,114 @@ CONSTRUCTORS IN C++
 
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-class Customer{
-    string name;
-    int acc_no;
-    int balance;
+// class Customer{
+//     string name;
+//     int acc_no;
+//     int balance;
 
-};
+// public:
+//     // Default Constructor
+//     Customer() { // a function with no return type + name same as the class -> CONSTRUCTOR
+//         cout<<"Constructor is called.";
+//     }
+//     // Parameterized Constructor
+//     Customer(string a, int b, int c) {
+//         name = a;
+//         acc_no = b;
+//         balance = c;
+//     }
+//     void display() {
+//         cout<<name<<" "<<acc_no<<" "<<balance<<endl;
+//     }
+// };
 
-int main() {
-    Customer a1;
-}
+// int main() {
+//     Customer a1("Smriti", 1101, 1000);
+//     a1.display();
+//     return 0;
+// }
+
+
+// In case of parameterized constructor, the following thing will cause an error
+// Customer(string name, int acc_no, int balance) {
+//     name = name;
+//     acc_no = acc_no;
+//     balance = balance;
+// }
+
+// THEREFORE, "this" keyword is used
+
+
+
+
+
+// WRITING SOME INFO IN THE CONSTRUCTOR DEFINITION ONLY
+// #include<iostream>
+// using namespace std;
+
+// class Customer{
+//     string name;
+//     int acc_no;
+//     int balance;
+// public:
+//     // Default Constructor
+//     Customer() {
+//         name = "Smriti";
+//         acc_no = 1101;
+//         balance = 1000;
+//     }
+//     // Parameterized Constructor
+//     Customer(string a, int b, int c) {
+//         name = a;
+//         acc_no = b;
+//         balance = c;
+//     }
+//     Customer(string a, int b) {
+//         name = a;
+//         acc_no = b;
+//     }
+//     void display() {
+//         cout<<name<<" "<<acc_no<<" "<<balance<<endl;
+//     }
+// };
+
+// int main() {
+//     Customer a1;
+//     Customer a2("Smriti", 1100, 1000);
+//     Customer a3("Smriti", 1111);
+//     a1.display();
+//     a2.display();
+//     a3.display();
+//     return 0;
+// }
+/*
+==========================================
+CONSTRUCTOR OVERLOADING — IMPORTANT POINTS
+==========================================
+
+1. A class can have multiple constructors with DIFFERENT parameter lists
+   (different number, types, or order of parameter types).
+
+2. All constructors have the SAME name as the class and NO return type.
+
+3. The compiler selects a matching constructor based on the arguments:
+   Customer a1;                      // Default constructor
+   Customer a2("Smriti", 1100, 1000);  // Parameterized constructor
+
+4. Changing only parameter NAMES does not create a new overload:
+   Customer(int a);
+   Customer(int b);  // Same signature, NOT a different overload
+
+5. If you declare a parameterized constructor, the compiler does not
+   automatically provide a default constructor. Define one if needed.
+
+6. Constructors must be public to create objects directly from main().
+
+7. Avoid overloads or default arguments that make a call ambiguous.
+   The compiler must be able to select one best matching constructor.
+
+8. Each constructor should initialize all necessary data members.
+*/
