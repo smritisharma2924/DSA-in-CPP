@@ -1,5 +1,7 @@
 /*
+===================
 CONSTRUCTORS IN C++
+===================
 
 1. A constructor initializes an object automatically when it is created.
 
@@ -155,4 +157,41 @@ CONSTRUCTOR OVERLOADING — IMPORTANT POINTS
 
 8. Each constructor should initialize all necessary data members.
 */
+
+
+
+/*
+==================
+DESTRUCTORS IN C++
+==================
+
+1. A destructor runs automatically when an object's lifetime ends.
+   It is used to release resources owned by the object.
+
+2. Its name is the class name preceded by '~':
+   ~Customer() {
+       cout << "Destructor called";
+   }
+
+3. It has NO return type, not even void, and takes NO arguments.
+
+4. A class normally has one destructor. It cannot be overloaded.
+
+5. It is usually declared public.
+
+6. If you do not declare a destructor, the compiler provides one.
+
+7. Local objects are destroyed when their scope ends, in reverse
+   order of construction.
+
+8. For an object created using new, delete calls its destructor
+   and releases its memory. Use delete[] for arrays created with new[].
+
+9. Members such as string clean themselves up automatically.
+   Raw pointers do NOT automatically delete the objects they point to.
+
+10. A base class needs a virtual destructor if derived objects will
+    be deleted through a pointer to that base class.
+*/
+
 
