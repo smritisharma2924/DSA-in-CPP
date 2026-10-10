@@ -178,5 +178,55 @@
 
 
 
-// PADDING =====================================
+/*
+PADDING IN C++
+==============
 
+1. Padding means extra unused bytes added by the compiler inside
+   or at the end of a class/struct to satisfy alignment requirements.
+
+2. Alignment means placing a member at a suitable memory address.
+   For example, an int commonly requires an address divisible by 4.
+
+3. Example (assuming char has size/alignment 1 and int has size/alignment 4):
+
+   struct Example {
+       char a;  // 1 byte
+                // 3 padding bytes
+       int b;   // 4 bytes
+       char c;  // 1 byte
+                // 3 trailing padding bytes
+   };
+
+   Member sizes total: 1 + 4 + 1 = 6 bytes
+   sizeof(Example): typically 12 bytes
+
+4. Internal padding is added BETWEEN members to align the next member.
+   Trailing padding is added AFTER the last member so that elements
+   in an array of these objects also satisfy alignment requirements.
+
+5. Member order can affect the amount of padding:
+
+   struct Better {
+       int b;   // 4 bytes
+       char a;  // 1 byte
+       char c;  // 1 byte
+                // 2 trailing padding bytes
+   };
+
+   sizeof(Better): typically 8 bytes
+
+   Grouping members with stricter alignment first often reduces padding.
+
+6. For ordinary structs like these, the object's alignment is usually
+   the strictest alignment required by any member. Its size is a
+   multiple of that alignment.
+
+7. Use sizeof(Type) to check size and alignof(Type) to check alignment.
+
+8. Exact sizes, alignment, and padding depend on the compiler and
+   target platform. The numbers above are common, not universal.
+
+9. An empty class's nonzero size is a separate object-identity rule;
+   it is not padding added between data members.
+*/
