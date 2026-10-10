@@ -91,3 +91,45 @@
 // an entity that has a state and behavior
 // anything that exists in physical world
 // CLASS DOES NOT EXISTS IN THE PHYSICAL WORLD. IT IS ONLY A BLUEPRINT OF THE OBJECT
+
+// class doesnt have any size.
+// its object does occupies space
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// class a{
+//     int b;
+// };
+
+// int main() {
+//     a obj;
+//     cout<<sizeof(obj)<<" ";
+//     return 0;
+// }
+// the size is 4 bytes here(ofc because of integer)
+
+
+
+// lets try to get the size of an empty class
+// #include<iostream>
+// using namespace std;
+
+// class a{
+    
+// };
+
+// int main() {
+//     a obj;
+//     cout<<sizeof(obj)<<" ";
+//     return 0;
+// }
+
+// EVEN THOUGH THIS CLASS HAS NO MEMBERS, 
+// obj IS A COMPLEETE OBJECT AND MUST OCCUPY SOME STORAGE
+// SO IT HAS A DISTINCT ADDRESS.
+
+// COMPILERS USUALLY ALLOCATE 1 BYTE AS
+// """IT IS THE SMALLEST POSSIBLE SIZE IN C++"""
