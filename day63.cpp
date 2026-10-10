@@ -195,3 +195,36 @@ DESTRUCTORS IN C++
 */
 
 
+// #include<iostream>
+// using namespace std;
+
+// class Customer{
+//     string name;
+//     int *balance = nullptr; // dynamically allocated memory is used to store the balance of the customer
+// public:
+//     Customer(string name, int bal) {
+//         cout<<"Constructor called."<<endl;
+//         this->name = name;
+//         balance = new int;
+//         *balance = bal;
+//     }
+//     Customer(string name) {
+//         this->name = name;
+//         cout<<"Constructor called."<<name<<endl;
+//     }
+//     ~Customer() {
+//         cout<<"Destructor called."<<name<<endl;
+//         delete balance; // all the memory locations which are allocated dynamically are deleted via destructor
+//     }
+// };
+
+// int main() {
+//     Customer a1("Smriti", 1000);
+//     Customer a2("A"), a3("B"), a4("C");
+//     return 0;
+// }
+
+// For local objects in the same scope, destructors run in the reverse order of construction
+// —like a stack: last in, first out (LIFO).
+// Construction: a1 → a2 → a3 → a4
+// Destruction:  a4 → a3 → a2 → a1
