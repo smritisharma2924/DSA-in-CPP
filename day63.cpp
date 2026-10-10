@@ -72,8 +72,6 @@ CONSTRUCTORS IN C++
 
 
 
-
-
 // WRITING SOME INFO IN THE CONSTRUCTOR DEFINITION ONLY
 // #include<iostream>
 // using namespace std;
@@ -104,6 +102,12 @@ CONSTRUCTORS IN C++
 //         this->name = a;
 //         this->acc_no = b;
 //     }
+//     // Copy Constructor
+//     Customer(Customer &a) {
+//         this->name = a.name;
+//         this->acc_no = a.acc_no;
+//         this->balance = a.balance;
+//     }
 //     void display() {
 //         cout<<name<<" "<<acc_no<<" "<<balance<<endl;
 //     }
@@ -113,9 +117,12 @@ CONSTRUCTORS IN C++
 //     Customer a1;
 //     Customer a2("Smriti", 1100, 1000);
 //     Customer a3("Smriti", 1111);
+//     Customer a4(a1); // Copy constructor is called here, it is present by default just like the "default constructor".
+//     // we can also write our own copy constructor if we want to do some specific things when the copy constructor is called.
 //     a1.display();
 //     a2.display();
 //     a3.display();
+//     a4.display();
 //     return 0;
 // }
 
