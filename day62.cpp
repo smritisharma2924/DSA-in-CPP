@@ -17,5 +17,7 @@
 //     S1.age = 10;
 //     S1.roll_no = 1342;
 //     S1.grade = "A-";
+
+//     cout<<S1.name<<" "<<S1.age<<" "<<S1.roll_no<<" "<<S1.grade;
 //     return 0;
 // }
