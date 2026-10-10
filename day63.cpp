@@ -85,19 +85,24 @@ CONSTRUCTORS IN C++
 // public:
 //     // Default Constructor
 //     Customer() {
-//         name = "Smriti";
-//         acc_no = 1101;
-//         balance = 1000;
+//         this->name = "Smriti";
+//         this->acc_no = 1101;
+//         this->balance = 1000;
 //     }
 //     // Parameterized Constructor
-//     Customer(string a, int b, int c) {
-//         name = a;
-//         acc_no = b;
-//         balance = c;
+//     // Customer(string a, int b, int c) {
+//     //     this->name = a;
+//     //     this->acc_no = b;
+//     //     this->balance = c;
+//     // }
+//     // Inline Constructor
+//     inline Customer(string a, int b, int c): name(a), acc_no(b), balance(c){
+        
 //     }
+//     // we can only keep one consturctor with the same structure of the parameters.
 //     Customer(string a, int b) {
-//         name = a;
-//         acc_no = b;
+//         this->name = a;
+//         this->acc_no = b;
 //     }
 //     void display() {
 //         cout<<name<<" "<<acc_no<<" "<<balance<<endl;
@@ -113,6 +118,8 @@ CONSTRUCTORS IN C++
 //     a3.display();
 //     return 0;
 // }
+
+
 /*
 ==========================================
 CONSTRUCTOR OVERLOADING — IMPORTANT POINTS
@@ -141,3 +148,4 @@ CONSTRUCTOR OVERLOADING — IMPORTANT POINTS
 
 8. Each constructor should initialize all necessary data members.
 */
+
