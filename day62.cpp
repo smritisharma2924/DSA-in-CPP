@@ -16,6 +16,6 @@
 //     S1.name = "Rohit";
 //     S1.age = 10;
 //     S1.roll_no = 1342;
-//     S1.grade = "8.45";
+//     S1.grade = "A-";
 //     return 0;
 // }
