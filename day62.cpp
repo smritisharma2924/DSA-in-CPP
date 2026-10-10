@@ -230,3 +230,31 @@ PADDING IN C++
 9. An empty class's nonzero size is a separate object-identity rule;
    it is not padding added between data members.
 */
+
+
+
+// DYNAMIC MEMORY ALLOCATION ====================================================
+
+// #include<iostream>
+// using namespace std;
+
+// class Student{
+// public: 
+//     string name;
+//     int age, roll_no;
+//     string grade; 
+// };
+
+// int main() {
+//     Student *s = new Student;
+//     (*s).name = "Smriti";
+//     (*s).age = 10;
+//     (*s).roll_no = 3423;
+//     (*s).grade = "A+";
+
+//     cout<<s->name<<" ";
+//     cout<<s->age<<" ";
+//     cout<<s->roll_no<<" ";
+//     cout<<s->grade<<endl;
+//     return 0;
+// }
