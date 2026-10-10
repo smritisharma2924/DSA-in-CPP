@@ -83,3 +83,11 @@
 //     cout<<s1.getGrade(123);
 //     return 0;
 // }
+
+
+
+
+// OBJECT
+// an entity that has a state and behavior
+// anything that exists in physical world
+// CLASS DOES NOT EXISTS IN THE PHYSICAL WORLD. IT IS ONLY A BLUEPRINT OF THE OBJECT
