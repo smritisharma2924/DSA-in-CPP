@@ -133,3 +133,50 @@
 
 // COMPILERS USUALLY ALLOCATE 1 BYTE AS
 // """IT IS THE SMALLEST POSSIBLE SIZE IN C++"""
+
+
+
+// but if we try to get the size of a class which has diff types of data fields. 
+// its size is not what we expect it to be
+
+
+// ex: for 2 int 
+// #include<iostream>
+// using namespace std;
+
+// class a{
+//     int b;
+//     int c;
+// };
+
+// int main() {
+//     a obj;
+//     cout<<sizeof(obj)<<" ";
+//     return 0;
+// }
+// 4+4 = 8 bytes
+
+
+// ex: for 1 int and 1 char
+// #include<iostream>
+// using namespace std;
+
+// class a{
+//     int b;
+//     char c;
+// };
+
+// int main() {
+//     a obj;
+//     cout<<sizeof(obj)<<" ";
+//     return 0;
+// }
+// it gives us the answer as 8 but it should be 5 according to the normal summation
+// 4+1 != 8???
+// here comes the concept of padding
+
+
+
+
+// PADDING =====================================
+
