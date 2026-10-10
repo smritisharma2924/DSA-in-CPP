@@ -27,3 +27,19 @@ CONSTRUCTORS IN C++
 
 10. A constructor does NOT automatically set every variable to zero.
 */
+
+
+
+#include<iostream>
+using namespace std;
+
+class Customer{
+    string name;
+    int acc_no;
+    int balance;
+
+};
+
+int main() {
+    Customer a1;
+}
