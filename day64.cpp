@@ -165,3 +165,51 @@ ENCAPSULATION IN C++
 6. Encapsulation helps prevent invalid changes and makes
    code easier to maintain.
 */
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Customer{
+//     string name;
+//     int acc_no, balance;
+
+//     public:
+//     Customer(string name, int acc_no, int balance) {
+//         this->name = name;
+//         this->acc_no = acc_no;
+//         this->balance = balance;
+//     }
+//     void deposit(int amount) {
+//         if(amount > 0) balance += amount;
+//         else cout<<"Invalid amount."<<endl;
+//     }
+//     void withdraw(int amount) {
+//         if (amount <= balance) balance -= amount;
+//         else cout<<"Insufficient balance."<<endl;
+//     }
+//     void display() {
+//         cout<<name<<" "<<acc_no<<" "<<balance<<endl;
+//     }
+// };
+
+// int main() {
+//     Customer a1("Smriti", 1, 1000);
+//     Customer a2("Shruti", 2, 2000);
+//     a1.display();
+//     a2.display();
+    
+//     a1.deposit(50);
+//     a1.display();
+
+//     a2.deposit(-4);
+//     a2.display();
+
+//     a1.withdraw(2000);
+//     a1.display();
+
+//     a2.withdraw(500);
+//     a2.display();
+//     return 0;
+// }
