@@ -60,3 +60,39 @@ STATIC DATA MEMBERS IN C++
 //     a3.display_total();
 //     return 0;
 // }
+
+
+
+
+
+/*
+STATIC MEMBER FUNCTIONS IN C++
+
+1. A static member function belongs to the CLASS.
+   Call it without creating an object:
+   Customer::display_total();
+
+2. Declare it inside the class using 'static':
+   static void display_total() {
+       cout << total_customer;
+   }
+
+3. It can directly access static data members and call other
+   static member functions, including private ones of its class.
+
+4. It cannot directly access non-static members.
+   To access them, it needs a specific object.
+
+5. It has NO 'this' pointer because it is not tied to an object.
+
+6. It can also be called through an object:
+   a1.display_total();
+   // Using the class name makes its purpose clearer.
+
+7. If defined outside the class, do not repeat 'static':
+   void Customer::display_total() {
+       cout << total_customer;
+   }
+
+8. Static member functions cannot be virtual or marked const.
+*/
