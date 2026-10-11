@@ -213,3 +213,33 @@ ENCAPSULATION IN C++
 //     a2.display();
 //     return 0;
 // }
+
+
+
+
+
+/*
+ABSTRACTION IN C++
+
+1. Abstraction means exposing essential features while hiding
+   implementation details.
+
+2. Users need to know WHAT an operation does, without needing
+   to know HOW it works internally.
+
+3. Example: customer.deposit(500);
+   The caller uses deposit() without knowing its internal logic.
+
+4. Classes provide abstraction through public interfaces
+   while keeping implementation details private.
+
+5. Abstract classes and pure virtual functions also help
+   define interfaces:
+   virtual void display() = 0;
+
+6. Abstraction reduces complexity and lets implementation
+   change without changing how callers use the interface.
+
+7. Abstraction hides implementation details;
+   encapsulation bundles data and functions and controls access.
+*/
