@@ -82,12 +82,6 @@ NOTE:
 
 
 
-
-// Accessing within the derived class using access modifiers
-#include<iostream>
-using namespace std;
-
-
 // Accessing outside the class using access modifiers
 // #include<iostream>
 // using namespace std;
@@ -108,5 +102,43 @@ using namespace std;
 //     // h.a = 10; // Error: 'a' is private
 //     // h.b = 20; // Error: 'b' is protected
 //     h.c = 30; // OK: 'c' is public
+//     return 0;
+// }
+
+
+
+// =============
+// DERIVED CLASS
+// =============
+
+
+/*
+MEMBER ACCESS UNDER DIFFERENT INHERITANCE MODES
+
+Parent member    | Public          Protected       Private
+access modifier  | inheritance     inheritance     inheritance
+-------------------------------------------------------------
+public            public          protected       private
+protected         protected       protected       private
+private           inaccessible    inaccessible    inaccessible
+*/
+
+// #include<iostream>
+// using namespace std;
+
+// class Human{
+//     // these are private by default
+//     string name;
+//     int age, weight;
+// };
+
+// class Student: public Human{ // public inheritance
+//     int roll_no, fees;
+// };
+
+// int main() {
+//     Student a;
+//     // a.name = "Smriti"; // Error: 'name' is private in 'Human'
+
 //     return 0;
 // }
