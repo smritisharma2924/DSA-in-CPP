@@ -30,3 +30,83 @@ INHERITANCE IN C++
 
 9. Inheritance supports code reuse and polymorphism.
 */
+
+
+
+/*
+ACCESS MODIFIERS IN C++
+
+Modifier    Same class    Derived class    Outside class
+---------------------------------------------------------
+public         YES            YES              YES
+protected      YES            YES              NO
+private        YES            NO               NO
+
+NOTE:
+- Members are private by default in a class.
+- Members are public by default in a struct.
+- Inheritance mode can further restrict inherited access.
+- A derived class accesses protected non-static members through
+  its own object (or an object of a further derived class).
+*/
+
+
+
+// Accessing within the same class using access modifiers
+// #include<iostream>
+// using namespace std;
+
+// class Human{
+//     private:
+//     int a;
+
+//     protected:
+//     int b;
+
+//     public:
+//     int c;
+
+//     public:
+//     void func() {
+//         a = 10; // OK: 'a' is private, accessible within the class
+//         b = 20; // OK: 'b' is protected, accessible within the class
+//         c = 30; // OK: 'c' is public, accessible within the class
+//     }
+// };
+
+// int main() {
+//     Human h;
+//     h.func(); // OK: public function can be called from main()
+//     return 0;
+// }
+
+
+
+
+// Accessing within the derived class using access modifiers
+#include<iostream>
+using namespace std;
+
+
+// Accessing outside the class using access modifiers
+// #include<iostream>
+// using namespace std;
+
+// class Human{
+//     private:
+//     int a;
+
+//     protected:
+//     int b;
+
+//     public:
+//     int c;
+// };
+
+// int main() {
+//     Human h;
+//     // h.a = 10; // Error: 'a' is private
+//     // h.b = 20; // Error: 'b' is protected
+//     h.c = 30; // OK: 'c' is public
+//     return 0;
+// }
