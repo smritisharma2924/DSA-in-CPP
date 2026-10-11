@@ -82,6 +82,7 @@ All code is kept in a single file per day for simplicity.
 | 61  | day61.cpp  | Recursion: n bit binary number                          |
 | 62  | day62.cpp  | Introduction to OOPS                                    |
 | 63  | day63.cpp  | Constructor and Destructor in C++.                      |
+| 64  | day64.cpp  | Static data member & fxn + Encapsulation & Abstraction  |
 
 ---
 (More days will be added as I progress 🚀)
