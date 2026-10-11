@@ -134,3 +134,34 @@ STATIC MEMBER FUNCTIONS IN C++
 //     Customer::static_display_total();
 //     return 0;
 // }
+
+
+
+
+
+/*
+====================
+ENCAPSULATION IN C++
+====================
+
+1. Encapsulation means combining data and the functions that
+   operate on it inside a class, with controlled access.
+
+2. Keep data members private and provide public functions
+   to read or modify them when needed.
+
+3. Private members cannot be accessed directly from main().
+   They can be accessed by the class's members and friends.
+
+4. Getters read data; setters modify data.
+   Not every data member needs a getter or setter.
+
+5. Public functions can validate input before changing data:
+   void setAge(int a) {
+       if (a >= 0)
+           age = a;
+   }
+
+6. Encapsulation helps prevent invalid changes and makes
+   code easier to maintain.
+*/
