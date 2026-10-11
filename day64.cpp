@@ -36,10 +36,10 @@ class Customer{
     int acc_no, balance;
     static int total_customer; // it will be shared by all the objects of the class. It is not a part of any object. It is a part of the class itself.
     public:
-    Customer(string a, int b, int c) {
-        name = a;
-        acc_no = b;
-        balance = c;
+    Customer(string name, int acc_no, int balance) {
+        this->name = name;
+        this->acc_no = acc_no;
+        this->balance = balance;
         total_customer++;
     }
     int Customer::total_customer = 0; // static data members are initialized outside the class. It is not a part of any object. It is a part of the class itself.
