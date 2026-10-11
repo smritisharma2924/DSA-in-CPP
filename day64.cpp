@@ -28,25 +28,35 @@ STATIC DATA MEMBERS IN C++
 
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-class Customer{
-    string name;
-    int acc_no, balance;
-    static int total_customer; // it will be shared by all the objects of the class. It is not a part of any object. It is a part of the class itself.
-    public:
-    Customer(string name, int acc_no, int balance) {
-        this->name = name;
-        this->acc_no = acc_no;
-        this->balance = balance;
-        total_customer++;
-    }
-    int Customer::total_customer = 0; // static data members are initialized outside the class. It is not a part of any object. It is a part of the class itself.
-};
+// class Customer{
+//     string name;
+//     int acc_no, balance;
+//     static int total_customer; // it will be shared by all the objects of the class. It is not a part of any object. It is a part of the class itself.
+//     public:
+//     Customer(string name, int acc_no, int balance) {
+//         this->name = name;
+//         this->acc_no = acc_no;
+//         this->balance = balance;
+//         total_customer++;
+//     }
+//     void display_total() {
+//         cout<<name<<" "<<acc_no<<" "<<balance<<" "<<total_customer<<endl;
+//     }
+// };
+// int Customer::total_customer = 0; // static data members are initialized outside the class. It is not a part of any object. It is a part of the class itself.
 
-int main() {
-    Customer a1("Smriti", 1, 1000);
-    Customer a2("Shruti", 2, 2000);
-    return 0;
-}
+// int main() {
+//     Customer a1("Smriti", 1, 1000);
+//     a1.display_total();
+//     Customer a2("Shruti", 2, 2000);
+//     a1.display_total();
+//     a2.display_total();
+//     Customer a3("Siddhi", 3, 1500);
+//     a1.display_total();
+//     a2.display_total();
+//     a3.display_total();
+//     return 0;
+// }
