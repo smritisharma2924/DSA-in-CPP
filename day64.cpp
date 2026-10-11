@@ -243,3 +243,28 @@ ABSTRACTION IN C++
 7. Abstraction hides implementation details;
    encapsulation bundles data and functions and controls access.
 */
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Customer{
+//     string name;
+//     int balance;
+    
+//     public:
+//     Customer(string name, int balance) {
+//         this->name = name;
+//         this->balance = balance;
+//     }
+//     void deposit(int amount) {
+//         if (amount>0) balance += amount;
+//         else cout<<"Invalid amount";
+//     }
+// };
+
+// int main() {
+//     Customer a1("Smriti", 100);
+//     a1.deposit(50); // we dont know how it is deposited but the work is just done.
+// }
