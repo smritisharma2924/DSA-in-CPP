@@ -1,5 +1,7 @@
 /*
+==========================
 STATIC DATA MEMBERS IN C++
+==========================
 
 1. A static data member belongs to the CLASS and is shared by all its objects.
    Each object does not get a separate copy.
@@ -66,7 +68,9 @@ STATIC DATA MEMBERS IN C++
 
 
 /*
+==============================
 STATIC MEMBER FUNCTIONS IN C++
+==============================
 
 1. A static member function belongs to the CLASS.
    Call it without creating an object:
@@ -96,3 +100,36 @@ STATIC MEMBER FUNCTIONS IN C++
 
 8. Static member functions cannot be virtual or marked const.
 */
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Customer{
+//     string name;
+//     int acc_no, balance;
+//     static int total_customer; // it will be shared by all the objects of the class. It is not a part of any object. It is a part of the class itself.
+//     static int total_balance;
+//     public:
+//     Customer(string name, int acc_no, int balance) {
+//         this->name = name;
+//         this->acc_no = acc_no;
+//         this->balance = balance;
+//         total_customer++;
+//         total_balance += balance;
+//     }
+//     static void static_display_total() {
+//         cout<<total_customer<<endl<<total_balance<<endl;
+//     }
+// };
+// int Customer::total_customer = 0; // static data members are initialized outside the class. It is not a part of any object. It is a part of the class itself.
+// int Customer::total_balance = 0;
+
+// int main() {
+//     Customer a1("Smriti", 1, 1000);
+//     Customer a2("Shruti", 2, 2000);
+//     Customer a3("Siddhi", 3, 1500);
+//     Customer::static_display_total();
+//     return 0;
+// }
