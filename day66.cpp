@@ -242,6 +242,14 @@ MULTIPLE INHERITANCE
 //     public:
 //     string specialization;
 
+//     Engineer() {
+//         cout<<"Hello engineer\n";
+//     }
+
+//     ~Engineer() {
+//         cout<<"Bye engineer\n";
+//     }
+
 //     void work() {
 //         cout<<"I have specialization in "<<specialization<<endl;
 //     }
@@ -250,6 +258,14 @@ MULTIPLE INHERITANCE
 // class Youtuber{
 //     public:
 //     int subscriber;
+
+//     Youtuber() {
+//         cout<<"Hello youtuber\n";
+//     }
+
+//     ~Youtuber() {
+//         cout<<"Bye youtuber\n";
+//     }
 
 //     void content_creator() {
 //         cout<<"I have "<<subscriber<<" subscribers on my channel"<<endl;
@@ -261,9 +277,14 @@ MULTIPLE INHERITANCE
 //     string name;
 
 //     CodeTeacher(string name, string specialization, int subscriber) {
+//         cout<<"Hello code teacher\n";
 //         this->name = name;
 //         this->specialization = specialization;
 //         this->subscriber = subscriber;
+//     }
+
+//     ~CodeTeacher() {
+//         cout<<"Bye code teacher\n";
 //     }
 
 //     void showcase() {
