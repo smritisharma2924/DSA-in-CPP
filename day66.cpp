@@ -233,3 +233,48 @@ MULTIPLE INHERITANCE
    declaration, then the derived constructor runs.
    Destructors run in reverse order.
 */
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Engineer{
+//     public:
+//     string specialization;
+
+//     void work() {
+//         cout<<"I have specialization in "<<specialization<<endl;
+//     }
+// };
+
+// class Youtuber{
+//     public:
+//     int subscriber;
+
+//     void content_creator() {
+//         cout<<"I have "<<subscriber<<" subscribers on my channel"<<endl;
+//     }
+// };
+
+// class CodeTeacher: public Engineer, public Youtuber{
+//     public:
+//     string name;
+
+//     CodeTeacher(string name, string specialization, int subscriber) {
+//         this->name = name;
+//         this->specialization = specialization;
+//         this->subscriber = subscriber;
+//     }
+
+//     void showcase() {
+//         cout<<"My name is "<<name<<endl;
+//         work();
+//         content_creator();
+//     }
+// };
+
+// int main() {
+//     CodeTeacher c1("Smriti", "AIML", 5000);
+//     c1.showcase();
+//     return 0;
+// }
