@@ -208,3 +208,28 @@ MULTILEVEL INHERITANCE
 //     m1.monthly_salary();
 //     m1.work();
 // }
+
+
+
+// =====================
+// MULTIPLE INHERITANCE
+// =====================
+
+/*
+MULTIPLE INHERITANCE
+
+1. One derived class inherits from two or more base classes.
+
+2. Syntax:
+   class C : public A, public B {};
+
+3. The derived class can use accessible members of each base class.
+   Each base can have a different inheritance access mode.
+
+4. Same-named members from different bases can cause ambiguity.
+   Resolve it using qualification: obj.A::display();
+
+5. Base constructors run in the order listed in the inheritance
+   declaration, then the derived constructor runs.
+   Destructors run in reverse order.
+*/
