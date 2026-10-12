@@ -70,47 +70,141 @@ REMEMBER:
 
 
 
-// ======================
+// ===================
 // SINGLE INHERITANCE
+// ===================
+
+/*
+SINGLE INHERITANCE
+
+1. One derived (child) class inherits from one base (parent) class.
+   Syntax: class Child : public Parent {};
+
+2. The child can reuse accessible parent members and add
+   its own data members and functions.
+
+3. Parent private members cannot be accessed directly by the child;
+   public/protected access depends on the inheritance mode.
+
+4. The parent constructor runs before the child constructor;
+   destructors run in reverse order.
+
+5. Public inheritance represents an "IS-A" relationship:
+   a Dog IS AN Animal.
+*/
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Human{
+//     protected:
+//     string name;
+//     int age;
+
+//     public:
+//     Human() {
+//         cout<<"Hello human\n";
+//     }
+//     ~Human() {
+//         cout<<"Goodbye human\n";
+//     }
+//     void work() {
+//         cout<<"I am working\n";
+//     }
+// };
+
+// class Student: public Human{
+//     int roll_no, fees;
+
+//     public:
+//     Student(string name, int age, int roll_no, int fees) {
+//         cout<<"Hello student\n";
+//         this->name = name;
+//         this->age = age;
+//         this->roll_no = roll_no;
+//         this->fees = fees;
+//     }
+//     ~Student() {
+//         cout<<"Goodbye student\n";
+//     }
+// };
+
+// int main() {
+//     Student a1("Smriti", 19, 1, 99); //parent class's constructor is called first, then derived class's constructor is called. the destructor is called in reverse order.
+//     a1.work();
+// }
+
+
+
+// ======================
+// MULTILEVEL INHERITANCE
 // ======================
 
-#include<iostream>
-using namespace std;
+/*
+MULTILEVEL INHERITANCE
 
-class Human{
-    protected:
-    string name;
-    int age;
+1. A class inherits from another derived class, forming a chain:
+   A -> B -> C.
 
-    public:
-    Human() {
-        cout<<"Hello human\n";
-    }
-    ~Human() {
-        cout<<"Goodbye human\n";
-    }
-    void work() {
-        cout<<"I am working\n";
-    }
-};
+2. Syntax:
+   class B : public A {};
+   class C : public B {};
 
-class Student: public Human{
-    int roll_no, fees;
+3. C can use accessible members from both A and B.
+   Access depends on member access modifiers and inheritance modes.
 
-    public:
-    Student(string name, int age, int roll_no, int fees) {
-        cout<<"Hello student\n";
-        this->name = name;
-        this->age = age;
-        this->roll_no = roll_no;
-        this->fees = fees;
-    }
-    ~Student() {
-        cout<<"Goodbye student\n";
-    }
-};
+4. Private members of A cannot be accessed directly by B or C;
+   private members of B cannot be accessed directly by C.
 
-int main() {
-    Student a1("Smriti", 19, 1, 99); //parent class's constructor is called first, then derived class's constructor is called. the destructor is called in reverse order.
-    a1.work();
-}
+5. Constructor order: A -> B -> C.
+   Destructor order:  C -> B -> A.
+*/
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Person{
+//     protected:
+//     string name;
+//     int age;
+
+//     public:
+//     void introduce() {
+//         cout<<"Hello, my name is "<<name<<endl;
+//     }
+// };
+
+// class Employee: public Person{
+//     protected:
+//     int salary;
+
+//     public:
+//     void monthly_salary() {
+//         cout<<"My monthly salary is "<<salary<<endl;
+//     }
+// };
+
+// class Manager: public Employee{
+//     public:
+//     string department;
+
+//     public:
+//     Manager(string name, int salary, string department) {
+//         this->name = name;
+//         this->salary = salary;
+//         this->department = department;
+//     }
+
+//     void work() {
+//         cout<<"I am leading the department of "<<department<<endl;
+//     }
+// };
+
+// int main() {
+//     Manager m1("Smriti", 10000, "HR");
+//     m1.introduce();
+//     m1.monthly_salary();
+//     m1.work();
+// }
