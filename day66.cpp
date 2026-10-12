@@ -67,3 +67,50 @@ REMEMBER:
 - These types describe the STRUCTURE of inheritance.
 - public, protected, and private describe inheritance ACCESS modes.
 */
+
+
+
+// ======================
+// SINGLE INHERITANCE
+// ======================
+
+#include<iostream>
+using namespace std;
+
+class Human{
+    protected:
+    string name;
+    int age;
+
+    public:
+    Human() {
+        cout<<"Hello human\n";
+    }
+    ~Human() {
+        cout<<"Goodbye human\n";
+    }
+    void work() {
+        cout<<"I am working\n";
+    }
+};
+
+class Student: public Human{
+    int roll_no, fees;
+
+    public:
+    Student(string name, int age, int roll_no, int fees) {
+        cout<<"Hello student\n";
+        this->name = name;
+        this->age = age;
+        this->roll_no = roll_no;
+        this->fees = fees;
+    }
+    ~Student() {
+        cout<<"Goodbye student\n";
+    }
+};
+
+int main() {
+    Student a1("Smriti", 19, 1, 99); //parent class's constructor is called first, then derived class's constructor is called. the destructor is called in reverse order.
+    a1.work();
+}
