@@ -299,3 +299,30 @@ MULTIPLE INHERITANCE
 //     c1.showcase();
 //     return 0;
 // }
+
+
+
+// ========================
+// HIERARCHICAL INHERITANCE
+// ========================
+
+/*
+HIERARCHICAL INHERITANCE
+
+1. Two or more derived classes inherit from the same base class.
+   Example: A -> B and A -> C.
+
+2. Syntax:
+   class B : public A {};
+   class C : public A {};
+
+3. Each derived class reuses accessible base members and can
+   add its own data members and functions.
+
+4. Sibling classes do not inherit each other's members.
+   B cannot directly access C's members through inheritance.
+
+5. For each derived object, the base constructor runs first,
+   then the derived constructor. Destructors run in reverse order.
+*/
+
