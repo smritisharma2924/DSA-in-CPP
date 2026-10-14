@@ -85,6 +85,7 @@ All code is kept in a single file per day for simplicity.
 | 64  | day64.cpp  | Static data member & fxn + Encapsulation & Abstraction  |
 | 65  | day65.cpp  | Inheritance and Access modifiers                        |
 | 66  | day66.cpp  | Types of Inheritance                                    |
+| 67  | day67.cpp  | Polymorphism                                            |
 
 ---
 (More days will be added as I progress 🚀)
