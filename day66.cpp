@@ -326,3 +326,66 @@ HIERARCHICAL INHERITANCE
    then the derived constructor. Destructors run in reverse order.
 */
 
+
+// #include<iostream>
+// using namespace std;
+
+// class Human{
+//     protected:
+//     string name;
+//     int age;
+
+//     public:
+//     Human() {
+//         cout<<"Hello human\n";
+//     }
+//     ~Human() {
+//         cout<<"Goodbye human\n";
+//     }
+//     void work() {
+//         cout<<"I am working\n";
+//     }
+// };
+
+// class Student: public Human{
+//     int roll_no, fees;
+
+//     public:
+//     Student(string name, int age, int roll_no, int fees) {
+//         cout<<"Hello student\n";
+//         this->name = name;
+//         this->age = age;
+//         this->roll_no = roll_no;
+//         this->fees = fees;
+//     }
+//     ~Student() {
+//         cout<<"Goodbye student\n";
+//     }
+// };
+
+// class Teacher: public Human{
+//     int salary;
+
+//     public:
+//     Teacher(string name, int age, int salary) {
+//         cout<<"Hello teacher\n";
+//         this->name = name;
+//         this->age = age;
+//         this->salary = salary;
+//     }
+//     ~Teacher() {
+//         cout<<"Goodbye teacher\n";
+//     }
+//     void display() {
+//         cout<<"My name is "<<name<<endl;
+//         cout<<"My age is "<<age<<endl;
+//         cout<<"My salary is "<<salary<<endl;
+//     }
+// };
+
+// int main() {
+//     Student a1("Smriti", 19, 1, 99); //parent class's constructor is called first, then derived class's constructor is called. the destructor is called in reverse order.
+//     a1.work();
+//     Teacher t1("John", 30, 50000);
+//     t1.display();
+// }
