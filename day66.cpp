@@ -434,7 +434,7 @@ HYBRID INHERITANCE
 //     Student() {
 //         cout<<"Hello student\n";
 //     }
-//     Student(int roll_no, int section) {
+//     Student(int roll_no, int  section) {
 //         cout<<"I am student\n";
 //     }
 //     ~Student() {
