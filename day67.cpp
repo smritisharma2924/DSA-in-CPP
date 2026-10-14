@@ -89,3 +89,69 @@ POLYMORPHISM
 //     c3.display();
 //     return 0;
 // }
+
+
+
+// ================
+// VIRTUAL FUNCTION
+// ================
+
+// #include<iostream>
+// using namespace std;
+
+// class Animal{
+//     public:
+
+//     virtual void speak() {
+//         cout<<"HuHu\n";
+//     }
+// };
+
+// class Dog: public Animal {
+//     public:
+
+//     void speak() {
+//         cout<<"Bark\n";
+//     }
+//     void roti() {
+//         cout<<"Hello\n";
+//     }
+// };
+
+// class Cat: public Animal {
+//     public:
+
+//     void speak() {
+//         cout<<"Meow\n";
+//     }
+// };
+
+// int main() {
+//     Animal *p;
+//     p = new Dog();
+//     p->speak();
+
+//     // p->roti(); // throwa an error cause p points to animal class and there is no roti function inside that class. it was able to access speak function as it was present in the base class as well
+    
+//     // but why we didnt do the folowing lines
+//     // Dog d2;
+//     // d2.speak();
+//     // it is also giving the same output so why we did the above steps
+
+//     // BECAUSE
+//     Animal *q;
+//     vector<Animal*> animals;
+//     animals.push_back(new Dog());
+//     animals.push_back(new Cat());
+//     animals.push_back(new Animal());
+//     animals.push_back(new Dog());
+//     animals.push_back(new Cat());
+//     // print the sound of these animals from the vector one by one
+//     for(int i=0 ; i<animals.size() ; i++) {
+//         q = animals[i];
+//         q->speak();
+//     }
+//     // we can use pointers for this purpose.
+//     // A PARENT CLASS POINTER CAN STORE THE ADDRESS OF ITS CHILD CLASS.
+//     return 0;
+// }
