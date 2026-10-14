@@ -92,6 +92,52 @@ POLYMORPHISM
 
 
 
+
+
+/*
+VIRTUAL FUNCTIONS
+
+1. A virtual function is declared using 'virtual' in a base class:
+   virtual void display() {
+       cout << "Base";
+   }
+
+2. A derived class can override it:
+   void display() override {
+       cout << "Derived";
+   }
+
+3. When called through a base pointer/reference, the override
+   is selected based on the actual object at runtime.
+
+4. Overriding is optional. If no override is provided,
+   the inherited implementation is used.
+
+5. Constructors cannot be virtual. Destructors can be virtual.
+
+
+PURE VIRTUAL FUNCTIONS
+
+1. A pure virtual function is declared using '= 0':
+   virtual void display() = 0;
+
+2. A class with a pure virtual function is ABSTRACT.
+   You cannot create objects of an abstract class.
+
+3. A derived class must provide a non-pure override to become
+   concrete; otherwise, it also remains abstract.
+
+4. Pointers and references to abstract classes are allowed:
+   Base* ptr = &derivedObject;
+
+5. Pure virtual functions define an interface that concrete
+   derived classes must implement.
+*/
+
+
+
+
+
 // ================
 // VIRTUAL FUNCTION
 // ================
@@ -153,5 +199,49 @@ POLYMORPHISM
 //     }
 //     // we can use pointers for this purpose.
 //     // A PARENT CLASS POINTER CAN STORE THE ADDRESS OF ITS CHILD CLASS.
+//     return 0;
+// }
+
+
+
+// =====================
+// PURE VIRTUAL FUNCTION
+// =====================
+// also known as abstract class
+
+// #include<iostream>
+// using namespace std;
+
+// class Animal{
+//     public:
+
+//     virtual void speak() = 0; // abstract class
+// };
+
+// class Dog: public Animal {
+//     public:
+
+//     void speak() {
+//         cout<<"Bark\n";
+//     }
+//     void roti() {
+//         cout<<"Hello\n";
+//     }
+// };
+
+// class Cat: public Animal {
+//     public:
+
+//     void speak() {
+//         cout<<"Meow\n";
+//     }
+// };
+
+// int main() {
+//     Animal *p;
+//     p = new Dog();
+//     p->speak();
+//     p = new Cat();
+//     p->speak();
 //     return 0;
 // }
