@@ -389,3 +389,116 @@ HIERARCHICAL INHERITANCE
 //     Teacher t1("John", 30, 50000);
 //     t1.display();
 // }
+
+
+
+// ==================
+// HYBRID INHERITANCE
+// ==================
+
+/*
+HYBRID INHERITANCE
+
+1. Hybrid inheritance combines two or more inheritance types
+   in the same class hierarchy.
+
+2. Example: diamond inheritance combines hierarchical
+   and multiple inheritance:
+       A
+      / \
+     B   C
+      \ /
+       D
+
+3. Syntax:
+   class B : public A {};
+   class C : public A {};
+   class D : public B, public C {};
+
+4. In this diamond, D normally contains TWO A base subobjects,
+   which can cause ambiguity when accessing A's members.
+
+5. Use virtual inheritance on BOTH paths to share ONE A:
+   class B : virtual public A {};
+   class C : virtual public A {};
+   // The most-derived class D initializes the virtual base A.
+*/
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Student{
+
+//     public:
+//     Student() {
+//         cout<<"Hello student\n";
+//     }
+//     Student(int roll_no, int section) {
+//         cout<<"I am student\n";
+//     }
+//     ~Student() {
+//         cout<<"Goodbye student\n";
+//     }
+// };
+
+// class Male{
+    
+//     public:
+//     Male() {
+//         cout<<"Hello male\n";
+//     }
+//     Male(int age) {
+//         cout<<"I am male\n";
+//     }
+//     ~Male() {
+//         cout<<"Goodbye male\n";
+//     }
+// };
+
+// class Female{
+    
+//     public:
+//     Female() {
+//         cout<<"Hello female\n";
+//     }
+//     Female(int age) {
+//         cout<<"I am female\n";
+//     }
+//     ~Female() {
+//         cout<<"Goodbye female\n";
+//     }
+// };
+
+// class Boy: public Student, public Male{
+
+//     public:
+//     Boy() {
+//         cout<<"Hello boy\n";
+//     }
+//     Boy(int roll_no, int section, int age) {
+//         cout<<"I am boy\n";
+//     }
+//     ~Boy() {
+//         cout<<"Goodbye boy\n";
+//     }
+// };
+
+// class Girl: public Student, public Female{
+
+//     public:
+//     Girl() {
+//         cout<<"Hello girl\n";
+//     }
+//     Girl(int roll_no, int section, int age) {
+//         cout<<"I am girl\n";
+//     }
+//     ~Girl() {
+//         cout<<"Goodbye girl\n";
+//     }
+// };
+
+// int main() {
+//     Girl g1;
+//     Boy b1;
+// }
