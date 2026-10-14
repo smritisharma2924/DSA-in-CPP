@@ -502,3 +502,105 @@ HYBRID INHERITANCE
 //     Girl g1;
 //     Boy b1;
 // }
+
+
+
+// =====================
+// MULTIPATH INHERITANCE
+// =====================
+
+/*
+MULTIPATH INHERITANCE
+
+1. A derived class inherits from the same base class through
+   more than one path. Example: A -> B -> D and A -> C -> D.
+
+2. Diamond structure:
+       A
+      / \
+     B   C
+      \ /
+       D
+
+3. Without virtual inheritance, D contains TWO A base subobjects.
+   Accessing A's non-static members can therefore be ambiguous.
+   This is called the DIAMOND PROBLEM.
+
+4. Use virtual inheritance on BOTH paths to share ONE A:
+   class B : virtual public A {};
+   class C : virtual public A {};
+   class D : public B, public C {};
+
+5. The most-derived class (D) initializes the virtual base (A).
+   A is constructed before B and C and destroyed after them.
+*/
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Human{
+//     public:
+//     string name;
+
+//     void display() {
+//         cout<<"My name is "<<name<<endl;
+//     }
+// };
+
+// class Engineer: public virtual Human{ //added to remove the ambiguity error. now the name variable is shared between Engineer and Youtuber classes. so now we can access the name variable from CodeTeacher class without any ambiguity error.
+//     public:
+//     string specialization;
+
+//     Engineer() {
+//         cout<<"Hello engineer\n";
+//     }
+
+//     ~Engineer() {
+//         cout<<"Bye engineer\n";
+//     }
+
+//     void work() {
+//         cout<<"I have specialization in "<<specialization<<endl;
+//     }
+// };
+
+// class Youtuber: public virtual Human{ //added to remove the ambiguity error. now the name variable is shared between Engineer and Youtuber classes. so now we can access the name variable from CodeTeacher class without any ambiguity error.
+//     public:
+//     int subscriber;
+
+//     Youtuber() {
+//         cout<<"Hello youtuber\n";
+//     }
+
+//     ~Youtuber() {
+//         cout<<"Bye youtuber\n";
+//     }
+
+//     void content_creator() {
+//         cout<<"I have "<<subscriber<<" subscribers on my channel"<<endl;
+//     }
+// };
+
+// class CodeTeacher: public Engineer, public Youtuber{
+//     public:
+//     int salary;
+
+//     CodeTeacher(string name, string specialization, int subscriber, int salary) {
+//         cout<<"Hello code teacher\n";
+//         this->name = name; // this->name is causing an ambiguity cause it has inherited from Engineer and Youtuber both have which have their own name. thats why the confusing is arising here
+//         this->specialization = specialization;
+//         this->subscriber = subscriber;
+//         this->salary = salary;
+//     }
+
+//     ~CodeTeacher() {
+//         cout<<"Bye code teacher\n";
+//     }
+// };
+
+// int main() {
+//     CodeTeacher c1("Smriti", "AIML", 5000, 100000);
+//     c1.display(); // this will cause an ambiguity error because display() is inherited from both Engineer and Youtuber classes. to resolve this we have to use scope resolution operator like c1.Engineer::display() or c1.Youtuber::display()
+//     return 0;
+// }
