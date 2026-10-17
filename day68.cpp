@@ -12,6 +12,8 @@
 
 
 
+// EXAMPLE 1
+
 // #include<iostream>
 // using namespace std;
 
@@ -58,6 +60,27 @@
 //     try {
 //     c1.deposit(500);
 //     c1.withdraw(6000);
+//     }
+//     catch(const char *e) {
+//         cout<<"Exception occured: "<<e<<endl;
+//     }
+//     return 0;
+// }
+
+
+
+// EXAMPLE 2
+
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     int a,b;
+//     cin>>a>>b;
+//     try {
+//         if (b == 0) throw "Divide by 0 is not possible.\n";
+//         int c = a/b;
+//         cout<<c<<endl;
 //     }
 //     catch(const char *e) {
 //         cout<<"Exception occured: "<<e<<endl;
