@@ -87,3 +87,22 @@
 //     }
 //     return 0;
 // }
+
+
+
+// EXAMPLE 3
+
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     try {
+//         int *p = new int[100000000000000];
+//         cout<<"Memory allocated.\n";
+//         delete []p;
+//     }
+//     catch(const exception &e) {
+//         cout<<"Exception occured.";
+//     }
+//     return 0;
+// }
