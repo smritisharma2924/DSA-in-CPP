@@ -90,7 +90,7 @@ All code is kept in a single file per day for simplicity.
 | 69  | day69.cpp  | File handling                                           |
 | 70  | day70.cpp  | Introduction to Linked List and Insertion Operation     |
 | 71  | day71.cpp  | Deletion in Linked List                                 |
-| 72  | day72.cpp  | Reverse & Rotate a Linked List, Middle of a Linked List |
+| 72  | day72.cpp  | Reverse a Linked List, Middle of a Linked List          |
 
 ---
 (More days will be added as I progress 🚀)

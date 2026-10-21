@@ -126,3 +126,44 @@
 //     }
 //     return 0;
 // };
+
+
+
+// MIDDLE OF A LINKED LIST - LEETCODE 876
+#include<iostream>
+using namespace std;
+
+class node{
+    public:
+    int data;
+    node *next;
+    node(int value) {
+        data = value;
+        next = NULL;
+    }
+};
+
+node* createLinkedList(int arr[], int index, int size) {
+    if (index == size) return NULL;
+    node *temp = new node(arr[index]);
+    temp->next = createLinkedList(arr, index+1, size);
+    return temp;
+};
+
+node* reverse(node *curr, node *prev) {
+    if (curr == NULL) return prev;
+    curr->next = prev;
+    node *futu = curr->next;
+    return reverse(futu, curr);
+};
+
+int main() {
+    int arr[] = {2,4,6,8,10};
+    node *head = createLinkedList(arr,0,5);
+    node *temp = reverse(head, NULL);
+    while(temp) {
+        cout<<temp->data<<" ";
+        temp = temp->next;
+    }
+    return 0;
+};
