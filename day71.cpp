@@ -113,3 +113,49 @@
 //     }
 //     return 0;
 // }
+
+
+
+// DELETING NODE AT ANY PARTICULAR POSITION, USING RECURSION
+// #include<iostream>
+// using namespace std;
+
+// class node{
+//     public:
+//     int data;
+//     node *next;
+//     node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+
+// node* createLinkedList(int arr[], int index, int size) {
+//     if (index == size) return NULL;
+//     node *temp = new node(arr[index]);
+//     temp->next = createLinkedList(arr, index+1, size);
+//     return temp;
+// };
+
+// node* deleteNode(node *curr, int x) {
+//     if (x == 1) {
+//         node *temp = curr->next;
+//         delete curr;
+//         return temp;
+//     }
+//     curr->next = deleteNode(curr->next, x-1);
+//     return curr;
+// }
+
+// int main() {
+//     int arr[] = {2,4,6,8,10};
+//     node *head = createLinkedList(arr,0,5);
+//     int pos = 3;
+//     node *curr = head;
+//     node *temp = deleteNode(curr, pos);
+//     while(head) {
+//         cout<<head->data<<" ";
+//         head = head->next;
+//     }
+//     return 0;
+// }
