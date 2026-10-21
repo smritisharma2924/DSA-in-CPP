@@ -123,9 +123,7 @@
 //             while(tail->next) {
 //                 tail = tail->next;
 //             }
-//             node *temp;
-//             temp = new node(arr[i]);
-//             tail->next = temp;
+//             tail->next = new node(arr[i]);
 //         }
 //     }
 //     node *temp = head;
