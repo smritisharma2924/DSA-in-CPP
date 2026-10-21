@@ -88,7 +88,8 @@ All code is kept in a single file per day for simplicity.
 | 67  | day67.cpp  | Polymorphism                                            |
 | 68  | day68.cpp  | Exception Handling                                      |
 | 69  | day69.cpp  | File handling                                           |
-| 70  | day70.cpp  | Introduction to Linked List                             |
+| 70  | day70.cpp  | Introduction to Linked List and Insertion Operation     |
+| 71  | day71.cpp  | Deletion in Linked List                                 |
 
 ---
 (More days will be added as I progress 🚀)
