@@ -235,3 +235,45 @@
 //     }
 //     return 0;
 // };
+
+
+
+// INSERTION AT ANY MIDDLE POSITION
+// #include<iostream>
+// using namespace std;
+
+// class node{
+//     public:
+//     int data;
+//     node *next;
+//     node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+
+// node* createLinkedList(int arr[], int index, int size) {
+//     if (index == size) return NULL;
+//     node *temp;
+//     temp = new node(arr[index]);
+//     temp->next = createLinkedList(arr, index+1, size);
+//     return temp;
+// };
+
+// int main() {
+//     int arr[] = {2,4,6,8};
+//     node *head = createLinkedList(arr, 0, 4);
+//     int pos = 2, value = 10;
+//     // Entering 10 at position 2(index 2/ after 2 nodes)
+//     node *temp = head;
+//     pos--;
+//     while(pos--) temp = temp->next;
+//     node *temp2 = new node(value);
+//     temp2->next = temp->next;
+//     temp->next = temp2;
+//     while(head) {
+//         cout<<head->data<<" ";
+//         head = head->next;
+//     }
+//     return 0;
+// };
