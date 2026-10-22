@@ -43,3 +43,56 @@
 //     }
 //     return 0;
 // };
+
+
+
+// Problem 2 - Remove every k node
+// #include<iostream>
+// using namespace std;
+
+// class node{
+//     public:
+//     int data;
+//     node *next;
+//     node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+
+// node* createLinkedList(int arr[], int index, int size) {
+//     if (index == size) return NULL;
+//     node *temp = new node(arr[index]);
+//     temp->next = createLinkedList(arr, index+1, size);
+//     return temp;
+// };
+
+// void deleteKth(node *head, node *curr, node *prev, int k, int i) {
+//     if (curr == NULL) return;
+//     if (i == k) {
+//         node *temp = curr;
+//         if (prev == NULL) head = curr->next;
+//         else prev->next = curr->next;
+//         curr = curr->next;
+//         delete temp;
+//         i = 1;
+//     }
+//     else {
+//         prev = curr;
+//         curr = curr->next;
+//         i++;
+//     }
+//     deleteKth(head, curr, prev, k, i);
+//     return;
+// };
+
+// int main() {
+//     int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//     node *head = createLinkedList(arr,0,10);
+//     deleteKth(head, head, NULL, 3, 1);
+//     while(head) {
+//         cout<<head->data<<" ";
+//         head = head->next;
+//     }
+//     return 0;
+// };
