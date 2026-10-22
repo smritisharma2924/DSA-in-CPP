@@ -150,3 +150,52 @@
 //     }
 //     return 0;
 // };
+
+
+
+// Problem 4 - Check Palindrome
+// using an extra space
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+
+// class node{
+//     public:
+//     int data;
+//     node *next;
+//     node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+
+// node* createLinkedList(int arr[], int index, int size) {
+//     if (index == size) return NULL;
+//     node *temp = new node(arr[index]);
+//     temp->next = createLinkedList(arr, index+1, size);
+//     return temp;
+// };
+
+// int main() {
+//     int arr[] = {1,2,3,3,2,1};
+//     node *head = createLinkedList(arr,0,6);
+//     vector<int> ans;
+//     node *temp = head;
+//     while(temp) {
+//         ans.push_back(temp->data);
+//         temp = temp->next;
+//     }
+//     int start = 0, end = ans.size()-1;
+//     while (start < end) {
+//         if (ans[start] == ans[end]) {
+//             start++;
+//             end--;
+//         }
+//         else {
+//             cout<<"Not palindrome.";
+//             return 0;
+//         }
+//     }
+//     cout<<"Palindrome";
+//     return 0;
+// };
