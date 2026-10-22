@@ -199,3 +199,59 @@
 //     cout<<"Palindrome";
 //     return 0;
 // };
+
+
+// solve without using any extra space
+// find middle using fast and slow pointer then reverse the second list and then match both
+// #include<iostream>
+// using namespace std;
+
+// class node{
+//     public:
+//     int data;
+//     node *next;
+//     node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+
+// node* createLinkedList(int arr[], int index, int size) {
+//     if (index == size) return NULL;
+//     node *temp = new node(arr[index]);
+//     temp->next = createLinkedList(arr, index+1, size);
+//     return temp;
+// };
+
+// node* reverseNode(node *curr, node *prev) {
+//     if (curr == NULL) return prev;
+//     node* futu = curr->next;
+//     curr->next = prev;
+//     return reverseNode(futu, curr);
+// }
+
+// int main() {
+//     int arr[] = {1,2,3,3,2,1};
+//     node *head = createLinkedList(arr,0,6);
+//     node *slow = head, *fast = head, *prev = NULL;
+//     while(fast->next && fast->next->next) {
+//         prev = slow;
+//         slow = slow->next;
+//         fast = fast->next->next;
+//     }
+//     prev = NULL;
+//     node *second = reverseNode(slow->next, NULL);
+//     node *first = head;
+//     while (first && second) {
+//         if (first->data == second->data) {
+//             first = first->next;
+//             second = second->next;
+//         }
+//         else {
+//             cout<<"Not palindrome.";
+//             return 0;
+//         }
+//     }
+//     cout<<"Palindrome.";
+//     return 0;
+// };
