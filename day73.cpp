@@ -68,8 +68,8 @@
 // };
 
 // void deleteKth(node *head, node *curr, node *prev, int k, int i) {
-//     if (curr == NULL) return;
-//     if (i == k) {
+//     if (curr == NULL) return; // base case
+//     if (i == k) { // deletion node
 //         node *temp = curr;
 //         if (prev == NULL) head = curr->next;
 //         else prev->next = curr->next;
@@ -77,7 +77,7 @@
 //         delete temp;
 //         i = 1;
 //     }
-//     else {
+//     else { // normal node
 //         prev = curr;
 //         curr = curr->next;
 //         i++;
@@ -90,6 +90,60 @@
 //     int arr[] = {1,2,3,4,5,6,7,8,9,10};
 //     node *head = createLinkedList(arr,0,10);
 //     deleteKth(head, head, NULL, 3, 1);
+//     while(head) {
+//         cout<<head->data<<" ";
+//         head = head->next;
+//     }
+//     return 0;
+// };
+
+
+
+// Problem 3 - Rotate List LEETCODE 61
+// ex: 1 2 3 4 5 6
+// rotate by 1: 6 1 2 3 4 5
+// rotate by 2: 5 6 1 2 3 4
+// #include<iostream>
+// using namespace std;
+
+// class node{
+//     public:
+//     int data;
+//     node *next;
+//     node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+
+// node* createLinkedList(int arr[], int index, int size) {
+//     if (index == size) return NULL;
+//     node *temp = new node(arr[index]);
+//     temp->next = createLinkedList(arr, index+1, size);
+//     return temp;
+// };
+
+// int main() {
+//     int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//     node *head = createLinkedList(arr,0,10);
+//     node *temp = head, *curr = head, *prev = NULL;
+//     int count = 0, k = 2;
+//     while(temp) { // count total nodes
+//         count++;
+//         temp = temp->next;
+//     }
+//     count -= k;
+//     while(count--) { // get to the kth last node
+//         prev = curr;
+//         curr = curr->next;
+//     }
+//     prev->next = NULL; // break the chain of the list 1->2->3->4 5->6->7->8->9->10. prev at 4. curr at 5.
+//     temp = curr;
+//     while(temp->next) { // find the tail of the second list
+//         temp = temp->next;
+//     }
+//     temp->next = head; // join that tail to the first list head
+//     head = curr; // make head to curr position. rotation done
 //     while(head) {
 //         cout<<head->data<<" ";
 //         head = head->next;
