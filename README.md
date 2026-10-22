@@ -92,6 +92,7 @@ All code is kept in a single file per day for simplicity.
 | 71  | day71.cpp  | Deletion in Linked List                                 |
 | 72  | day72.cpp  | Reverse a Linked List, Middle of a Linked List + Concept of slow and fast pointers        |
 | 73  | day73.cpp  | Remove every kth node, rotate list, palindrome list     |
+| 74  | day74.cpp  | Doubly Linked List, Insertion and deletion operations   |
 
 ---
 (More days will be added as I progress 🚀)
