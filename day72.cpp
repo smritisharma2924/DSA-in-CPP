@@ -165,3 +165,41 @@
 //     cout<<"Value at the middle position is: "<<temp->data;
 //     return 0;
 // };
+
+
+
+// HERE WE WERE TRAVERSING THE LINKED LIST 2 TIMES
+
+// CONCEPT OF SLOW AND FAST POINTERS
+// #include<iostream>
+// using namespace std;
+
+// class node{
+//     public:
+//     int data;
+//     node *next;
+//     node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+
+// node* createLinkedList(int arr[], int index, int size) {
+//     if (index == size) return NULL;
+//     node *temp = new node(arr[index]);
+//     temp->next = createLinkedList(arr, index+1, size);
+//     return temp;
+// };
+
+// int main() {
+//     int arr[] = {2,4,6,8,10,12};
+//     node *head = createLinkedList(arr,0,6);
+//     node *slow = head;
+//     node *fast = head;
+//     while (fast && fast->next) {
+//         fast = fast->next->next;
+//         slow = slow->next;
+//     }
+//     cout<<"Value at the middle position is: "<<slow->data;
+//     return 0;
+// };
