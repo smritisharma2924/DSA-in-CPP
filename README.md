@@ -94,6 +94,7 @@ All code is kept in a single file per day for simplicity.
 | 73  | day73.cpp  | Remove every kth node, rotate list, palindrome list     |
 | 74  | day74.cpp  | Doubly Linked List, Insertion and deletion operations   |
 | 75  | day75.cpp  | Linked List Problems: Remove Duplicates, Merge 2 sorted lists, Sort a linked list      |
+| 76  | day76.cpp  | Circular Linked List: Detect loop, find length of loop  |
 
 ---
 (More days will be added as I progress 🚀)
