@@ -102,3 +102,71 @@
 //     }
 //     return 0;
 // };
+
+
+
+// Problem 2 - Merge two sorted list
+// #include<iostream>
+// using namespace std;
+
+// class node{
+//     public:
+//     int data;
+//     node *next;
+//     node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+
+// node* createLl(int arr[], int index, int size) {
+//     if (index == size) return NULL;
+//     node *temp = new node(arr[index]);
+//     temp->next = createLl(arr, index+1, size);
+//     return temp;
+// };
+
+// int main() {
+//     int arr1[] = {2,4,5,7};
+//     int arr2[] = {3,4,4,6,8,10};
+//     node *head1 = createLl(arr1,0,4);
+//     node *head2 = createLl(arr2,0,6);
+//     node dummy(0);
+//     node *temp1 = head1, *temp2 = head2, *temp3 = &dummy;
+//     while (temp1 && temp2) {
+//         if (temp1->data <= temp2->data) {
+//             node *temp = new node(temp1->data);
+//             temp3->next = temp;
+//             temp3 = temp3->next;
+//             temp1 = temp1->next;
+//         } 
+//         else {
+//             node *temp = new node(temp2->data);
+//             temp3->next = temp;
+//             temp3 = temp3->next;
+//             temp2 = temp2->next;
+//         }
+//     }
+//     if (temp1) {
+//         temp3->next = temp1;
+//     }
+//     if (temp2) {
+//         temp3->next = temp2;
+//     }
+//     while (head1) {
+//         cout<<head1->data<<" ";
+//         head1 = head1->next;
+//     }
+//     cout<<endl;
+//     while (head2) {
+//         cout<<head2->data<<" ";
+//         head2 = head2->next;
+//     }
+//     cout<<endl;
+//     node *head3 = dummy.next;
+//     while (head3) {
+//         cout<<head3->data<<" ";
+//         head3 = head3->next;
+//     }
+//     return 0;
+// }
