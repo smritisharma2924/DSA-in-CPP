@@ -170,3 +170,63 @@
 //     }
 //     return 0;
 // }
+
+
+
+// Problem 3 - Sort a list which contains 0,1 and 2
+// ex: 0->1->0->2->2->0->1
+// OP: 0->0->0->1->1->2->2
+// solve without using extra memory
+// #include<iostream>
+// using namespace std;
+
+// class node{
+//     public:
+//     int data;
+//     node *next;
+//     node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+
+// node* createLl(int arr[], int index, int size) {
+//     if (index == size) return NULL;
+//     node *temp = new node(arr[index]);
+//     temp->next = createLl(arr, index+1, size);
+//     return temp;
+// };
+
+// int main() {
+//     int arr[] = {0,1,0,2,2,0,1};
+//     node *head = createLl(arr,0,7);
+//     int count0 = 0, count1 = 0, count2 = 0;
+//     node *temp = head;
+
+//     while (temp) {
+//         cout<<temp->data<<" ";
+//         if (temp->data == 0) count0++;
+//         else if (temp->data == 1) count1++;
+//         else count2++;
+//         temp = temp->next;
+//     }
+//     temp = head;
+//     while (count0--) {
+//         temp->data = 0;
+//         temp = temp->next;
+//     }
+//     while (count1--) {
+//         temp->data = 1;
+//         temp = temp->next;
+//     }
+//     while (count2--) {
+//         temp->data = 2;
+//         temp = temp->next;
+//     }
+//     cout<<endl;
+//     while (head) {
+//         cout<<head->data<<" ";
+//         head = head->next;
+//     }
+//     return 0;
+// }
