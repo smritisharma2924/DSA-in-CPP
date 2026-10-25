@@ -90,13 +90,14 @@ All code is kept in a single file per day for simplicity.
 | 69  | day69.cpp  | File handling                                           |
 | 70  | day70.cpp  | Introduction to Linked List and Insertion Operation     |
 | 71  | day71.cpp  | Deletion in Linked List                                 |
-| 72  | day72.cpp  | Reverse a Linked List, Middle of a Linked List + Concept of slow and fast pointers        |
+| 72  | day72.cpp  | Reverse&Middle of a LL + Use of slow and fast pointers  |
 | 73  | day73.cpp  | Remove every kth node, rotate list, palindrome list     |
 | 74  | day74.cpp  | Doubly Linked List, Insertion and deletion operations   |
-| 75  | day75.cpp  | Linked List Problems: Remove Duplicates, Merge 2 sorted lists, Sort a linked list      |
+| 75  | day75.cpp  | Problems: Remove Duplicates, Merge 2 sorted, Sort a LL  |
 | 76  | day76.cpp  | Circular Linked List: Detect loop, find length of loop  |
 | 77  | day77.cpp  | Remove Loop in linked list                              |
 | 78  | day78.cpp  | Add 2 numbers represented by LLs, Reverse a LL in groups|
+| 79  | day79.cpp  | Hard Problems: Flattening a LLs, Merge k sort LLs       |
 
 ---
 (More days will be added as I progress 🚀)
