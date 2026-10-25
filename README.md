@@ -95,6 +95,7 @@ All code is kept in a single file per day for simplicity.
 | 74  | day74.cpp  | Doubly Linked List, Insertion and deletion operations   |
 | 75  | day75.cpp  | Linked List Problems: Remove Duplicates, Merge 2 sorted lists, Sort a linked list      |
 | 76  | day76.cpp  | Circular Linked List: Detect loop, find length of loop  |
+| 77  | day77.cpp  | Remove Loop in linked list                              |
 
 ---
 (More days will be added as I progress 🚀)
