@@ -98,6 +98,7 @@ All code is kept in a single file per day for simplicity.
 | 77  | day77.cpp  | Remove Loop in linked list                              |
 | 78  | day78.cpp  | Add 2 numbers represented by LLs, Reverse a LL in groups|
 | 79  | day79.cpp  | Hard Problems: Flattening a LLs, Merge k sort LLs       |
+| 80  | day80.cpp  | Clone a Linked list with next and random pointer        |
 
 ---
 (More days will be added as I progress 🚀)
