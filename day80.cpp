@@ -174,7 +174,7 @@
 // step 2: insert them
 // step 3: assign random pointers
 // step 4: disconnect them
- 
+
 // #include <iostream>
 // using namespace std;
 
@@ -247,10 +247,8 @@
 //     // make the random pointer connection
 //     while (curr1) {
 //         curr2 = curr1->next;
-//         if (curr1->random) {
-//             curr2->random = curr1->random->next;
-//             curr1 = curr2->next;
-//         }
+//         if (curr1->random) curr2->random = curr1->random->next;
+//         curr1 = curr2->next;
 //     }
 
 //     // now disconnect the list
