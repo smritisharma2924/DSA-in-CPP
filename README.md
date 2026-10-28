@@ -101,6 +101,7 @@ All code is kept in a single file per day for simplicity.
 | 80  | day80.cpp  | Clone a Linked list with next and random pointer        |
 | 81  | day81.cpp  | Introduction to Stack, Implementation using array and LL|
 | 82  | day82.cpp  | Stack Problems                                          |
+| 83  | day83.cpp  | Stack Problems part 2                                   |
 
 ---
 (More days will be added as I progress 🚀)
