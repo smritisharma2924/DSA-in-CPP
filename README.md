@@ -102,6 +102,7 @@ All code is kept in a single file per day for simplicity.
 | 81  | day81.cpp  | Introduction to Stack, Implementation using array and LL|
 | 82  | day82.cpp  | Stack Problems                                          |
 | 83  | day83.cpp  | Stack Problems part 2                                   |
+| 84  | day84.cpp  | Stack hard Problems                                     |
 
 ---
 (More days will be added as I progress 🚀)
