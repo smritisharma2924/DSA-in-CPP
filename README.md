@@ -105,6 +105,7 @@ All code is kept in a single file per day for simplicity.
 | 84  | day84.cpp  | Stack Hard Problems                                     |
 | 85  | day85.cpp  | Stack: The Celebrity Problem                            |
 | 86  | day86.cpp  | Stack Hard Problems part 2                              |
+| 87  | day87.cpp  | Stack Hard Problems part 3                              |
 
 ---
 (More days will be added as I progress 🚀)
