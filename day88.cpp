@@ -73,3 +73,60 @@
 //     q.pop();
 //     return 0;
 // }
+
+
+
+// IMPLEMENTING QUEUE USING LINKED LIST
+// #include<iostream>
+// using namespace std;
+
+// class node{
+//     public:
+//     int data;
+//     node *next;
+//     node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+
+// class Queue{
+//     node *front;
+//     node *rear;
+//     public:
+//     Queue() {
+//         front = rear = NULL;
+//     }
+//     bool isEmpty() {
+//         return front == NULL;
+//     }
+//     void push(int x) {
+//         if (isEmpty()) {
+//             front = new node(x);
+//             rear = front;
+//             return;
+//         }
+//         else {
+//             rear->next = new node(x);
+//             rear = rear->next;
+//         }
+//     }
+//     void pop() {
+//         if (isEmpty()) {
+//             cout<<"Queue underflow.";
+//             return;
+//         }
+//         else {
+//             node *temp = front;
+//             front = front->next;
+//             delete temp;
+//         }
+//     }
+//     int start() {
+//         if (isEmpty()) {
+//             cout<<"Queue empty.";
+//             return -1;
+//         }
+//         else return front->data;
+//     }
+// };
