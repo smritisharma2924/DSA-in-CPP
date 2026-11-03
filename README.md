@@ -106,7 +106,7 @@ All code is kept in a single file per day for simplicity.
 | 85  | day85.cpp  | Stack: The Celebrity Problem                            |
 | 86  | day86.cpp  | Stack Hard Problems part 2                              |
 | 87  | day87.cpp  | Stack Hard Problems part 3                              |
-| 88  | day88.cpp  | Queue Intro, implement with array and LL, Circular queue|
+| 88  | day88.cpp  | Introduction to Queue, Implementation with array and LL |
 
 ---
 (More days will be added as I progress 🚀)
