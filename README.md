@@ -108,6 +108,7 @@ All code is kept in a single file per day for simplicity.
 | 87  | day87.cpp  | Stack Hard Problems part 3                              |
 | 88  | day88.cpp  | Introduction to Queue, Implementation with array and LL |
 | 89  | day89.cpp  | Queue Problems                                          |
+| 90  | day90.cpp  | Queue with sliding window problems                      |
 
 ---
 (More days will be added as I progress 🚀)
