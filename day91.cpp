@@ -127,3 +127,129 @@
 //     view_dequeue(d1);
 //     return 0;
 // }
+
+
+
+// IMPLEMENTATION USING ARRAY
+// #include<iostream>
+// using namespace std;
+
+// class dequeue{
+//     int front, rear, size;
+//     int *arr;
+//     public:
+//     dequeue(int n) {
+//         size = n;
+//         arr = new int[n];
+//         front = rear = -1;
+//     }
+//     bool isEmpty() {
+//         return front == -1;
+//     }
+//     bool isFull() {
+//         return (rear+1)%size == front;
+//     }
+//     void push_front(int x) {
+//         if (isEmpty()) {
+//             front = rear = 0;
+//             arr[0] = x;
+//             return;
+//         }
+//         else if (isFull()) {
+//             cout<<"Overflow.";
+//             return;
+//         }
+//         else {
+//             front = (front-1+size)%size;
+//             arr[front] = x;
+//             return;
+//         }
+//     }
+//     void push_back(int x) {
+//         if (isEmpty()) {
+//             front = rear = 0;
+//             arr[0] = x;
+//             return;
+//         }
+//         else if (isFull()) {
+//             cout<<"Overflow.";
+//             return;
+//         }
+//         else {
+//             rear = (rear+1+size)%size;
+//             arr[rear] = x;
+//             return;
+//         }
+//     }
+//     void pop_front() {
+//         if (isEmpty()) return;
+//         else if (front == rear) {
+//             front = rear = -1;
+//             return;
+//         }
+//         else {
+//             front = (front+1+size)%size;
+//             return;
+//         }
+//     }
+//     void pop_back() {
+//         if (isEmpty()) return;
+//         else if (front == rear) {
+//             front = rear = -1;
+//             return;
+//         }
+//         else {
+//             rear = (rear-1+size)%size;
+//             return;
+//         }
+//     }
+//     int start() {
+//         if (isEmpty()) return -1;
+//         else return arr[front];
+//     }
+//     int end() {
+//         if (isEmpty()) return -1;
+//         else return arr[rear];
+//     }
+//     void display() {
+//         cout << "Dequeue (front to back): ";
+//         if (isEmpty()) {
+//             cout << "empty" << endl;
+//             return;
+//         }
+//         int i = front;
+//         while (true) {
+//             cout << arr[i] << " ";
+//             if (i == rear) break;
+//             i = (i+1)%size;
+//         }
+//         cout << endl;
+//     }
+// };
+
+// int main() {
+//     dequeue d1(5);
+
+//     d1.push_front(5);
+//     d1.display();
+//     d1.push_front(3);
+//     d1.display();
+//     d1.push_back(7);
+//     d1.display();
+//     d1.push_back(9);
+//     d1.display();
+//     d1.push_back(11);
+//     d1.display();
+
+//     cout << "Front value: " << d1.start() << endl;
+//     cout << "Back value: " << d1.end() << endl;
+//     cout << "Is empty: " << d1.isEmpty() << endl;
+//     cout << "Is full: " << d1.isFull() << endl;
+
+//     d1.pop_front();
+//     d1.display();
+//     d1.pop_back();
+//     d1.display();
+
+//     return 0;
+// }
