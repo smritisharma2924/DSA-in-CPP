@@ -54,3 +54,24 @@
 //     ans.push_back(nums[d.front()]); // step 3
 // }
 // return ans;
+
+
+
+// Problem 2 - Minimum number of k consecutive flip bits
+// int minKBitFlips(vector<int>& nums, int k) {
+//     int n = nums.size();
+//     int flip = 0;
+//     for (int i=0 ; i < n-k+1 ; i++) {
+//         if (nums[i] == 0) {
+//             for (int j=i ; j < i+k ; j++) {
+//                 if (nums[j] == 0) nums[j] = 1;
+//                 else nums[j] = 0; 
+//             }
+//             flip++;
+//         }
+//         else continue;
+//        }
+//     vector<int> target(n,1);
+//     if (nums == target) return flip;
+//     else return -1;
+// }
