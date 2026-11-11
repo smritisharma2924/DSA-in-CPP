@@ -75,3 +75,12 @@
 //     if (nums == target) return flip;
 //     else return -1;
 // }
+// time complexity: O(nk) and space complexity: O(1)
+
+
+// OPTIMISED SOLUTION
+int minKBitFlips(vector<int>& nums, int k) {
+    int n = nums.size();
+    int flip = 0;
+    
+}
