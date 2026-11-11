@@ -79,8 +79,22 @@
 
 
 // OPTIMISED SOLUTION
-int minKBitFlips(vector<int>& nums, int k) {
-    int n = nums.size();
-    int flip = 0;
-    
-}
+// int minKBitFlips(vector<int>& nums, int k) {
+//     int n = nums.size();
+//     int flip = 0;
+//     queue<int> q;
+//     // we get the no of flips by the size of the queue
+//     for (int i=0 ; i<n ; i++) {
+//         if (!q.empty() && q.front() < i) q.pop();
+//         // mod gives us 0 or 1 which tells even or odd no of flips,
+//         // if even flips i.e 0 and nums[i] is also 0, then currently nums[i] is 0 after all the flips, SO we need to flip it,
+//         // if odd flips i.e 1 and nums[i] is also 1, then currently nums[i] is 1 after all the flips, SO we need to flip it
+//         // in all the rest cases the nums[i] currently has become 1
+//         if (q.size() % 2 == nums[i]) {
+//             if (i+k > n) return -1;
+//             q.push(i+k-1);
+//             flip++;
+//         }
+//     }
+//     return flip;
+// }
