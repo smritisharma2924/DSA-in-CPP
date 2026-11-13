@@ -111,6 +111,7 @@ All code is kept in a single file per day for simplicity.
 | 90  | day90.cpp  | Queue with sliding window problems                      |
 | 91  | day91.cpp  | Introduction to Dequeue and its implementation          |
 | 92  | day92.cpp  | Queue hard problems                                     |
+| 93  | day93.cpp  | Introduction to Trees                                   |
 
 ---
 (More days will be added as I progress 🚀)
