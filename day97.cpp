@@ -125,3 +125,91 @@
 //     }
 //     return 0;
 // }
+
+
+
+// Problem 3 - Top View of Binary Tree
+
+// #include <iostream>
+// using namespace std;
+
+// class node {
+//     public:
+//     int data;
+//     node *left;
+//     node *right;
+//     node(int val) {
+//         data = val;
+//         left = NULL;
+//         right = NULL;
+//     }
+// };
+
+// node* createBinaryTree() {
+//     node *root = new node(1);
+
+//     root->left = new node(2);
+//     root->right = new node(3);
+
+//     root->left->left = new node(4);
+//     root->left->right = new node(5);
+//     root->right->right = new node(6);
+
+//     root->left->left->left = new node(7);
+//     root->left->left->right = new node(8);
+
+//     root->left->left->right->right = new node(9);
+
+//     return root;
+// }
+
+// void find(node *root, int pos, int &l, int &r) {
+//     if (!root) return;
+//     l = min(l,pos);
+//     r = max(r,pos);
+//     find(root->left, pos-1, l, r);
+//     find(root->right, pos+1, l, r);
+
+// }
+
+// vector<int> topView(node *root) {
+//     if (!root) return {};
+//     int l=0, r=0;
+//     find(root, 0, l, r);
+//     vector<int> ans(r-l+1);
+//     vector<bool> filled(r-l+1, 0);
+//     queue<node*> q;
+//     queue<int> index;
+//     q.push(root);
+//     index.push(-1 * l);
+//     while (!q.empty()) {
+//         node *temp = q.front();
+//         q.pop();
+//         int pos = index.front();
+//         index.pop();
+
+//         if (!filled[pos]) {
+//             filled[pos] = 1;
+//             ans[pos] = temp->data;
+//         }
+//         if (temp->left) {
+//             q.push(temp->left);
+//             index.push(pos-1);
+//         }
+//         if (temp->right) {
+//             q.push(temp->right);
+//             index.push(pos+1);
+//         }
+//     }
+//     return ans;
+// }
+
+// int main() {
+//     node *root = createBinaryTree();
+//     cout << "Top View: ";
+//     vector<int> result = topView(root);
+//     for (int i = 0; i < result.size(); i++) {
+//         cout << result[i] << " ";
+//     }
+//     return 0;
+// }
