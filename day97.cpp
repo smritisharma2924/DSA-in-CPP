@@ -130,6 +130,26 @@
 
 // Problem 3 - Top View of Binary Tree
 
+
+// USING LEVEL ORDER TRAVERSAL
+// 1. find pos of left most and right most node
+// 2. create a vector "ans" of int of size (rightmost - leftmost + 1)
+// 3. create a vector "filled" of bool to check if the position is filled or not
+// 4. start traversing the tree using level order traversal and 
+// 5. if filled[pos] is false,fill the ans vector with the first node encountered at each position
+// 6. maintain an index queue to keep track of the position of each node in the tree, when traversing the tree, for left child push pos-1 and for right child push pos+1
+
+/*            1
+            /   \
+          2       3
+        /   \       \
+      4       5       6
+    /   \
+  7       8
+            \
+              9
+*/
+
 // #include <iostream>
 // using namespace std;
 
@@ -204,6 +224,33 @@
 //     return ans;
 // }
 
+// vector<int> bottomView(node *root) {
+//     if (!root) return {};
+//     int l=0, r=0;
+//     find(root, 0, l, r);
+//     vector<int> ans(r-l+1);
+//     queue<node*> q;
+//     queue<int> index;
+//     q.push(root);
+//     index.push(-1 * l);
+//     while (!q.empty()) {
+//         node *temp = q.front();
+//         q.pop();
+//         int pos = index.front();
+//         index.pop();
+//         ans[pos] = temp->data;
+//         if (temp->left) {
+//             q.push(temp->left);
+//             index.push(pos-1);
+//         }
+//         if (temp->right) {
+//             q.push(temp->right);
+//             index.push(pos+1);
+//         }
+//     }
+//     return ans;
+// }
+
 // int main() {
 //     node *root = createBinaryTree();
 //     cout << "Top View: ";
@@ -211,6 +258,13 @@
 //     for (int i = 0; i < result.size(); i++) {
 //         cout << result[i] << " ";
 //     }
+//     cout << endl;
+//     cout << "Bottom View: ";
+//     result = bottomView(root);
+//     for (int i = 0; i < result.size(); i++) {
+//         cout << result[i] << " ";
+//     }
+//     cout << endl;
 //     return 0;
 // }
 
