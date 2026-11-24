@@ -116,6 +116,7 @@ All code is kept in a single file per day for simplicity.
 | 95  | day95.cpp  | Binary Tree problems                                    |
 | 96  | day96.cpp  | Binary Tree problems part 2                             |
 | 97  | day97.cpp  | Binary Tree problems part 3                             |
+| 98  | day98.cpp  | Iterative traversals: preorder, inorder, postorder      |
 
 ---
 (More days will be added as I progress 🚀)
